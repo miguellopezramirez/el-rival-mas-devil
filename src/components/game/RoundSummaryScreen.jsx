@@ -3,7 +3,7 @@ import { useGame } from '../../context/GameContext';
 import { useGameSounds } from '../../hooks/useGameSounds';
 import { Trophy, ThumbsDown, ArrowRight, Undo2, PartyPopper } from 'lucide-react';
 
-const RoundSummaryScreen = () => {
+const RoundSummaryScreen = ({ isProjector = false }) => {
   const { players, bankedMoney, startGame, eliminatePlayer, revivePlayer } = useGame();
   const { playWin } = useGameSounds();
 
@@ -85,65 +85,71 @@ const RoundSummaryScreen = () => {
         </table>
       </div>
 
-      <div className="flex justify-center w-full max-w-4xl mb-8">
-        <button
-          onClick={playWin}
-          className="flex items-center gap-2 bg-yellow-600 hover:bg-yellow-500 text-white px-6 py-2 rounded-full font-bold uppercase tracking-widest transition-all shadow-[0_0_15px_rgba(234,179,8,0.5)] hover:shadow-[0_0_25px_rgba(234,179,8,0.8)]"
-        >
-          <PartyPopper size={20} /> Festejar Ganador
-        </button>
-      </div>
-
-      {/* Elimination Section */}
-      <div className="w-full max-w-4xl mb-8 p-6 bg-red-900/10 border border-red-500/30 rounded-lg">
-        <h3 className="text-xl font-bold text-red-500 uppercase tracking-widest mb-4">Gestión de Eliminación</h3>
-        <p className="text-gray-400 mb-4 text-sm">
-          Haz clic para eliminar. Los eliminados se ven opacos. Haz clic en la X para cancelar.
-        </p>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {players.map(p => {
-            const isEliminated = p.status === 'eliminated';
-            return (
-              <button
-                key={p.id}
-                onClick={() => {
-                  if (isEliminated) {
-                    revivePlayer(p.id);
-                  } else {
-                    if (window.confirm(`¿Estás seguro de eliminar a ${p.name}?`)) {
-                      eliminatePlayer(p.id);
-                    }
-                  }
-                }}
-                className={`
-                   relative border py-3 rounded transition-all flex items-center justify-center gap-2 group
-                   ${isEliminated
-                    ? 'bg-black/80 border-gray-700 text-gray-600 opacity-50 grayscale hover:opacity-100 hover:border-white'
-                    : 'bg-black/50 border-white/20 hover:border-red-500 hover:bg-red-900/50 text-white'
-                  }
-                 `}
-              >
-                <span className={isEliminated ? 'line-through decoration-red-500 decoration-2' : ''}>
-                  {p.name}
-                </span>
-                {isEliminated && (
-                  <div className="absolute -top-2 -right-2 bg-gray-700 text-white rounded-full p-1 shadow hover:bg-red-600 transition-colors" title="Cancelar Eliminación">
-                    <Undo2 size={14} />
-                  </div>
-                )}
-              </button>
-            );
-          })}
+      {!isProjector && (
+        <div className="flex justify-center w-full max-w-4xl mb-8">
+          <button
+            onClick={playWin}
+            className="flex items-center gap-2 bg-yellow-600 hover:bg-yellow-500 text-white px-6 py-2 rounded-full font-bold uppercase tracking-widest transition-all shadow-[0_0_15px_rgba(234,179,8,0.5)] hover:shadow-[0_0_25px_rgba(234,179,8,0.8)]"
+          >
+            <PartyPopper size={20} /> Festejar Ganador
+          </button>
         </div>
-      </div>
+      )}
 
-      <button
-        onClick={startGame} // Re-using startGame to reset round for now
-        className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors"
-      >
-        Siguiente Ronda <ArrowRight size={20} />
-      </button>
+      {!isProjector && (
+        <>
+          {/* Elimination Section */}
+          <div className="w-full max-w-4xl mb-8 p-6 bg-red-900/10 border border-red-500/30 rounded-lg">
+            <h3 className="text-xl font-bold text-red-500 uppercase tracking-widest mb-4">Gestión de Eliminación</h3>
+            <p className="text-gray-400 mb-4 text-sm">
+              Haz clic para eliminar. Los eliminados se ven opacos. Haz clic en la X para cancelar.
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {players.map(p => {
+                const isEliminated = p.status === 'eliminated';
+                return (
+                  <button
+                    key={p.id}
+                    onClick={() => {
+                      if (isEliminated) {
+                        revivePlayer(p.id);
+                      } else {
+                        if (window.confirm(`¿Estás seguro de eliminar a ${p.name}?`)) {
+                          eliminatePlayer(p.id);
+                        }
+                      }
+                    }}
+                    className={`
+                        relative border py-3 rounded transition-all flex items-center justify-center gap-2 group
+                        ${isEliminated
+                        ? 'bg-black/80 border-gray-700 text-gray-600 opacity-50 grayscale hover:opacity-100 hover:border-white'
+                        : 'bg-black/50 border-white/20 hover:border-red-500 hover:bg-red-900/50 text-white'
+                      }
+                        `}
+                  >
+                    <span className={isEliminated ? 'line-through decoration-red-500 decoration-2' : ''}>
+                      {p.name}
+                    </span>
+                    {isEliminated && (
+                      <div className="absolute -top-2 -right-2 bg-gray-700 text-white rounded-full p-1 shadow hover:bg-red-600 transition-colors" title="Cancelar Eliminación">
+                        <Undo2 size={14} />
+                      </div>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <button
+            onClick={startGame} // Re-using startGame to reset round for now
+            className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors"
+          >
+            Siguiente Ronda <ArrowRight size={20} />
+          </button>
+        </>
+      )}
 
     </div>
   );

@@ -2,37 +2,140 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import questionsData from '../data/questions.json';
 import { mockMoneyChain } from '../data/mock';
 import { useGameSounds } from '../hooks/useGameSounds';
+import { useGameSync } from '../hooks/useGameSync';
 
 const GameContext = createContext();
 
 export const useGame = () => useContext(GameContext);
 
 export const GameProvider = ({ children }) => {
-  // --- Game State ---
-  const [gameStatus, setGameStatus] = useState('REGISTRATION'); // 'REGISTRATION', 'PLAYING', 'SUMMARY'
+
+  // --- Persistence Helper ---
+  const loadState = (key, defaultValue) => {
+    try {
+      if (typeof window !== 'undefined') {
+        const saved = localStorage.getItem(`rival_weakest_${key}`);
+        if (saved !== null) return JSON.parse(saved);
+      }
+    } catch (e) {
+      console.warn("Storage load failed", e);
+    }
+    return defaultValue;
+  };
+
+  // --- Game State (Initialized from Storage) ---
+  const [gameStatus, setGameStatus] = useState(() => loadState('gameStatus', 'REGISTRATION'));
   const { playCorrect, playIncorrect, playBank, playTimeout } = useGameSounds();
 
   // Players & Stats
-  const [players, setPlayers] = useState([]);
-  const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
+  const [players, setPlayers] = useState(() => loadState('players', []));
+  const [currentPlayerIndex, setCurrentPlayerIndex] = useState(() => loadState('currentPlayerIndex', 0));
 
   // Round Configuration
-  const [roundNumber, setRoundNumber] = useState(1);
-  const [currentLevelIndex, setCurrentLevelIndex] = useState(0);
-  const [bankedMoney, setBankedMoney] = useState(0);
-  const [timer, setTimer] = useState(120);
-  const [isTimerRunning, setIsTimerRunning] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [roundNumber, setRoundNumber] = useState(() => loadState('roundNumber', 1));
+  const [currentLevelIndex, setCurrentLevelIndex] = useState(() => loadState('currentLevelIndex', 0));
+  const [bankedMoney, setBankedMoney] = useState(() => loadState('bankedMoney', 0));
+  const [timer, setTimer] = useState(() => loadState('timer', 120));
+  const [isTimerRunning, setIsTimerRunning] = useState(false); // Don't persist running state
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(() => loadState('currentQuestionIndex', 0));
+  const [isQuestionVisible, setIsQuestionVisible] = useState(false); // Default hidden on load/refresh logic? Or persist? Let's NOT persist simplicity or maybe persist.
+  // User said "hide on round start". So default false. Persistence might be good if refreshed mid-read.
+  // I'll persist it.
+  // const [isQuestionVisible, setIsQuestionVisible] = useState(() => loadState('isQuestionVisible', false));
 
   // Chains
   // {level:0, value:0} is index 0.
   const logicChain = [...mockMoneyChain].sort((a, b) => a.value - b.value);
   const currentPotentialMoney = logicChain[currentLevelIndex]?.value || 0;
 
+  // Join all state into a single object for broadcasting
+  const fullState = {
+    gameStatus,
+    players,
+    currentPlayerIndex,
+    currentLevelIndex,
+    bankedMoney,
+    timer,
+    isTimerRunning,
+    currentQuestionIndex,
+    roundNumber,
+    isQuestionVisible
+  };
+
+  // Determine Role (Simple location check)
+  const isProjector = window.location.pathname.includes('proyector');
+  const role = isProjector ? 'RECEIVER' : 'SENDER';
+
+  // Handle receiving state (Projector)
+  const handleStateReceived = (receivedState) => {
+    if (isProjector) {
+      setGameStatus(receivedState.gameStatus);
+      setPlayers(receivedState.players);
+      setCurrentPlayerIndex(receivedState.currentPlayerIndex);
+      setCurrentLevelIndex(receivedState.currentLevelIndex);
+      setBankedMoney(receivedState.bankedMoney);
+      setTimer(receivedState.timer);
+      setIsTimerRunning(receivedState.isTimerRunning);
+      setCurrentQuestionIndex(receivedState.currentQuestionIndex);
+      setRoundNumber(receivedState.roundNumber);
+      setIsQuestionVisible(receivedState.isQuestionVisible);
+    }
+  };
+
+  // Handle request for state (Control)
+  const handleRequestState = () => {
+    // We strictly use the current references in scope, or better, we just trigger a broadcast effect?
+    // Since this callback might close over old state if not careful, we rely on the effect below 
+    // OR we explicitly call broadcastState with the variables we have in scope (which are closures).
+    // React state closures might be stale here if this function isn't recreated?
+    // actually useGameSync hook effect dependency list includes onRequestState. 
+    // We need to ensure we send CURRENT state.
+    // The easiest way is to set a "forceSync" flag or simply call broadcastState(fullState).
+    // Since `fullState` is recreated every render, and `handleRequestState` closes over it...
+    // We need to make sure `useGameSync` is updated with the new `handleRequestState`.
+    // Yes, `fullState` is defined above.
+    broadcastState(fullState);
+  };
+
+  const { broadcastState, requestInitialState } = useGameSync(role, handleStateReceived, handleRequestState);
+
+  // Request initial state on mount if Projector
+  useEffect(() => {
+    if (isProjector) {
+      requestInitialState();
+    }
+  }, [isProjector]);
+
+  // Broadcast on change (Debounced slightly or just effect?)
+  // Effect on all state dependencies to broadcast
+  // Broadcast on change AND Persist
+  useEffect(() => {
+    if (!isProjector) {
+      broadcastState(fullState);
+
+      // Save to storage
+      localStorage.setItem('rival_weakest_gameStatus', JSON.stringify(gameStatus));
+      localStorage.setItem('rival_weakest_players', JSON.stringify(players));
+      localStorage.setItem('rival_weakest_currentPlayerIndex', JSON.stringify(currentPlayerIndex));
+      localStorage.setItem('rival_weakest_roundNumber', JSON.stringify(roundNumber));
+      localStorage.setItem('rival_weakest_currentLevelIndex', JSON.stringify(currentLevelIndex));
+      localStorage.setItem('rival_weakest_bankedMoney', JSON.stringify(bankedMoney));
+      localStorage.setItem('rival_weakest_timer', JSON.stringify(timer));
+      localStorage.setItem('rival_weakest_currentQuestionIndex', JSON.stringify(currentQuestionIndex));
+      localStorage.setItem('rival_weakest_isQuestionVisible', JSON.stringify(isQuestionVisible));
+    }
+  }, [
+    gameStatus, players, currentPlayerIndex, currentLevelIndex,
+    bankedMoney, timer, isTimerRunning, currentQuestionIndex, roundNumber, isQuestionVisible
+  ]);
+
   // --- Effects ---
 
   // Timer Logic
   useEffect(() => {
+    // Only run timer logic on SENDER. Receiver just receives the timer value.
+    if (isProjector) return;
+
     let interval;
     if (isTimerRunning && timer > 0) {
       interval = setInterval(() => {
@@ -43,7 +146,7 @@ export const GameProvider = ({ children }) => {
       endRound();
     }
     return () => clearInterval(interval);
-  }, [isTimerRunning, timer]);
+  }, [isTimerRunning, timer, isProjector]);
 
   // --- Actions ---
 
@@ -111,6 +214,7 @@ export const GameProvider = ({ children }) => {
     // Simplest is to find first active player index in the main array.
     const firstActiveIndex = players.findIndex(p => p.status === 'active');
     setCurrentPlayerIndex(firstActiveIndex !== -1 ? firstActiveIndex : 0);
+    setIsQuestionVisible(false); // Hide question at start of round
   };
 
   const nextTurn = () => {
@@ -181,12 +285,34 @@ export const GameProvider = ({ children }) => {
   };
 
   const toggleTimer = () => {
+    if (!isTimerRunning) {
+      // Starting timer: Reveal question automatically
+      setIsQuestionVisible(true);
+    }
     setIsTimerRunning(!isTimerRunning);
   };
 
   const resetTimer = () => {
     setTimer(120);
     setIsTimerRunning(false);
+  };
+
+  const toggleQuestionVisibility = () => {
+    setIsQuestionVisible(prev => !prev);
+  };
+
+  const endGame = () => {
+    if (window.confirm("¿Seguro de TERMINAR LA PARTIDA? Se borrarán todos los jugadores y el progreso.")) {
+      setGameStatus('REGISTRATION');
+      setPlayers([]);
+      setRoundNumber(1);
+      setCurrentLevelIndex(0);
+      setBankedMoney(0);
+      setTimer(120);
+      setIsTimerRunning(false);
+      // Clear storage manually if needed or let effect handle it (effect saves state).
+      // Since we update state, effect will run and overwrite storage with "REGISTRATION"/empty players.
+    }
   };
 
   const value = {
@@ -213,10 +339,12 @@ export const GameProvider = ({ children }) => {
     currentLevelIndex, setCurrentLevelIndex, // Exposed for God Mode
 
     question: questionsData[currentQuestionIndex],
+    isQuestionVisible, toggleQuestionVisibility, // Exposed for logic
     handleCorrect,
     handleIncorrect,
     handleBank,
     endRound,
+    endGame,
   };
 
   return (
