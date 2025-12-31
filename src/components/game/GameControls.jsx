@@ -1,6 +1,6 @@
 import React from 'react';
 import { useGame } from '../../context/GameContext';
-import { Play, Pause, RotateCcw } from 'lucide-react';
+import { Play, Pause, RotateCcw, Square } from 'lucide-react';
 
 const GameControls = () => {
   const {
@@ -9,6 +9,7 @@ const GameControls = () => {
     handleBank,
     toggleTimer,
     resetTimer,
+    endRound,
     isTimerRunning
   } = useGame();
 
@@ -30,6 +31,13 @@ const GameControls = () => {
           title="Reset Timer"
         >
           <RotateCcw size={20} className="text-white" />
+        </button>
+        <button
+          onClick={endRound}
+          className="p-2 rounded-full bg-red-900 border border-red-700 hover:bg-red-800 transition-colors"
+          title="End Round"
+        >
+          <Square size={20} className="text-white fill-current" />
         </button>
       </div>
 

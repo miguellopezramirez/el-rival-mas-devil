@@ -1,7 +1,8 @@
-import React from 'react';
-import PlayerCard from './PlayerCard';
+import { useGame } from '../../context/GameContext';
 
-const PlayerList = ({ players }) => {
+const PlayerList = () => {
+  const { players, currentPlayer } = useGame();
+
   return (
     <div className="flex flex-col items-center w-full max-w-[220px] h-full justify-center relative z-10">
 
@@ -12,14 +13,29 @@ const PlayerList = ({ players }) => {
          In the reference, the players are stacked. 
          We just list them vertically as pills. 
       */}
-      {players.map((player, index) => (
-        <div
-          key={player.id}
-          className="w-full transition-all duration-500 ease-in-out"
-        >
-          <PlayerCard player={player} />
-        </div>
-      ))}
+      {players.filter(p => p.status === 'active').map((player) => {
+        const isTurn = currentPlayer?.id === player.id;
+        return (
+          <div
+            key={player.id}
+            className={`w-full transition-all duration-300 ease-in-out ${isTurn ? 'scale-110 z-20' : 'scale-100 opacity-80'}`}
+          >
+            <div className={`
+              relative w-full h-12 mb-2 flex items-center px-4 overflow-hidden rounded-r-full border-l-4 
+              ${isTurn
+                ? 'bg-gradient-to-r from-game-blue to-black border-white shadow-[0_0_15px_rgba(0,85,255,0.8)]'
+                : 'bg-black border-gray-700'
+              }
+            `}>
+              <span className={`font-bold uppercase tracking-widest ${isTurn ? 'text-white' : 'text-gray-400'}`}>
+                {player.name}
+              </span>
+
+              {/* Optional: Show individual bank or stats here if desired? */}
+            </div>
+          </div>
+        );
+      })}
 
       <div className="mt-8 flex flex-col items-center">
         <div className="game-pill w-full h-12 border-game-blue/50 opacity-0" style={{ background: 'black' }}>

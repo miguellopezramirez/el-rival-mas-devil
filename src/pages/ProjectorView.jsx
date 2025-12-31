@@ -1,25 +1,42 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PlayerList from '../components/game/PlayerList';
 import Jumbotron from '../components/game/Jumbotron';
 import MoneyChain from '../components/game/MoneyChain';
 import GameControls from '../components/game/GameControls';
+import RegistrationScreen from '../components/game/RegistrationScreen';
+import RoundSummaryScreen from '../components/game/RoundSummaryScreen';
+import GodModeModal from '../components/admin/GodModeModal';
 import { useGame } from '../context/GameContext';
-import { mockPlayers } from '../data/mock';
 
 const ProjectorView = () => {
-  const [players, setPlayers] = useState(mockPlayers);
-  const { moneyChain, currentLevel, bankedMoney, timer, question, handleBank } = useGame();
+  const {
+    gameStatus,
+    moneyChain,
+    currentLevel,
+    bankedMoney,
+    timer,
+    question,
+    roundNumber
+  } = useGame();
 
-  // Format timer MM:SS (or just seconds if specific preference)
-  // Request said "0:45", so let's format nice
+  // Format timer
   const formatTime = (seconds) => {
     const m = Math.floor(seconds / 60);
     const s = seconds % 60;
     return `${m}:${s < 10 ? '0' : ''}${s}`;
   };
 
+  if (gameStatus === 'REGISTRATION') {
+    return <RegistrationScreen />;
+  }
+
+  if (gameStatus === 'SUMMARY') {
+    return <RoundSummaryScreen />;
+  }
+
+  // DEFAULT: 'PLAYING'
   return (
-    <div className="flex h-screen w-screen overflow-hidden relative font-sans">
+    <div className="flex h-screen w-screen overflow-hidden relative font-sans animate-in fade-in">
 
       {/* Background Stage Lighting */}
       <div className="absolute inset-0 bg-[#000510] -z-20"></div>
@@ -29,25 +46,17 @@ const ProjectorView = () => {
 
       {/* Timer (Top Left) */}
       <div className="absolute top-6 left-8 z-50">
-        <div className="border-2 border-game-blue bg-black/80 rounded-lg px-6 py-2 shadow-[0_0_15px_rgba(0,85,255,0.5)]">
-          <span className="text-4xl font-mono font-bold text-white tracking-widest">
+        <div className={`border-2 ${timer < 10 ? 'border-red-500 bg-red-900/50' : 'border-game-blue bg-black/80'} transition-colors duration-500 rounded-lg px-6 py-2 shadow-[0_0_15px_rgba(0,85,255,0.5)]`}>
+          <span className={`text-4xl font-mono font-bold tracking-widest ${timer < 10 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
             {formatTime(timer)}
           </span>
         </div>
       </div>
 
-      {/* Button ADD TO POT (Top Center) Visual Indicator mainly - actual action now in Controls */}
-      <div className="absolute top-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-50">
-        {/* Kept for visual reference if needed, but 'BANCO' button handles this now visually in bottom center? 
-             Actually prompt said "Botón 'BANCO': El dinero acumulado... Implementa los botones de control en la parte inferior central."
-             So we can remove this top one or keep it as a status indicator. Let's remove to not confuse. 
-         */}
-      </div>
-
       {/* Round Indicator (Top Right) */}
       <div className="absolute top-8 right-8 z-50">
         <h2 className="text-2xl font-bold text-white uppercase tracking-widest drop-shadow-[0_0_10px_white]">
-          ROUND: 1
+          ROUND: {roundNumber}
         </h2>
       </div>
 
@@ -59,12 +68,9 @@ const ProjectorView = () => {
         <div className="flex items-center justify-between w-full px-16 flex-1 gap-10">
           {/* Left: Players (Bars) */}
           <div className="w-72 h-full flex flex-col justify-center">
-            <PlayerList players={players} />
-            {/* Total Pot for Players */}
-            {/* Not explicitly wired yet, using static $0 for round pot display or could be bankedMoney? 
-                 Req: "dinero acumulado... se suma al 'POZO TOTAL' de la ronda". 
-                 Let's show a global pot or round pot. 'bankedMoney' is "Round Bank". 
-             */}
+            {/* PlayerList now handles obtaining players from context */}
+            <PlayerList />
+            {/* Total Pot for Round */}
             <div className="mt-4 flex flex-col items-center">
               <div className="game-puck w-40 h-10">
                 <div className="game-puck-body bg-black"></div>
@@ -97,6 +103,7 @@ const ProjectorView = () => {
 
       </div>
 
+      <GodModeModal />
     </div>
   );
 };
