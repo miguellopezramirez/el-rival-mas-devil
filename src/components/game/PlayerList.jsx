@@ -1,13 +1,18 @@
+import { useRef, useEffect } from 'react';
 import { useGame } from '../../context/GameContext';
 
 const PlayerList = () => {
   const { players, currentPlayer } = useGame();
+  const activePlayerRef = useRef(null);
+
+  useEffect(() => {
+    if (activePlayerRef.current) {
+      activePlayerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [currentPlayer]);
 
   return (
-    <div className="flex flex-col items-center w-full max-w-[220px] h-full justify-center relative z-10">
-
-      {/* Title */}
-      <h3 className="text-center text-game-blue font-bold tracking-widest mb-4 drop-shadow-md opacity-0">...</h3>
+    <div className="flex flex-col items-center w-full max-w-[220px] relative z-10 space-y-2">
 
       {/* 
          In the reference, the players are stacked. 
@@ -18,6 +23,7 @@ const PlayerList = () => {
         return (
           <div
             key={player.id}
+            ref={isTurn ? activePlayerRef : null}
             className={`w-full transition-all duration-300 ease-in-out ${isTurn ? 'scale-110 z-20' : 'scale-100 opacity-80'}`}
           >
             <div className={`

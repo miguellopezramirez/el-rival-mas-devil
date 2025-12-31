@@ -3,7 +3,7 @@ import { useGame } from '../../context/GameContext';
 import { Trash2, UserPlus, Play } from 'lucide-react';
 
 const RegistrationScreen = () => {
-  const { players, registerPlayer, removePlayer, startGame } = useGame();
+  const { players, registerPlayer, removePlayer, startGame, questionPacks, selectedPackId, changeQuestionPack } = useGame();
   const [name, setName] = useState('');
 
   const handleAdd = (e) => {
@@ -19,6 +19,19 @@ const RegistrationScreen = () => {
       <h1 className="text-4xl md:text-6xl font-bold mb-8 text-game-blue tracking-widest text-center uppercase drop-shadow-[0_0_15px_rgba(0,85,255,0.8)]">
         Registro de Jugadores
       </h1>
+
+      <div className="mb-8 w-full max-w-md bg-gray-900 border border-gray-700 p-4 rounded flex flex-col gap-2">
+        <label className="text-gray-400 text-sm uppercase tracking-wider font-bold">Seleccionar Pack de Preguntas</label>
+        <select
+          className="bg-black text-white p-2 rounded border border-gray-600 focus:border-blue-500 outline-none"
+          value={selectedPackId}
+          onChange={(e) => changeQuestionPack(e.target.value)}
+        >
+          {questionPacks.map(pack => (
+            <option key={pack.id} value={pack.id}>{pack.name} ({pack.data.length} preguntas)</option>
+          ))}
+        </select>
+      </div>
 
       <div className="w-full max-w-md bg-[#001133] border-2 border-game-blue rounded-xl p-6 shadow-2xl mb-8">
         <form onSubmit={handleAdd} className="flex gap-2">
@@ -61,8 +74,8 @@ const RegistrationScreen = () => {
           onClick={startGame}
           disabled={players.length < 2}
           className={`flex items-center gap-2 px-8 py-3 rounded-full font-bold text-xl uppercase tracking-widest transition-all ${players.length < 2
-              ? 'bg-gray-700 text-gray-400 cursor-not-allowed'
-              : 'bg-green-600 hover:bg-green-500 text-white shadow-[0_0_20px_rgba(0,255,0,0.6)] hover:scale-105'
+            ? 'bg-gray-700 text-gray-400 cursor-not-allowed'
+            : 'bg-green-600 hover:bg-green-500 text-white shadow-[0_0_20px_rgba(0,255,0,0.6)] hover:scale-105'
             }`}
         >
           <Play fill="currentColor" /> Comenzar Juego

@@ -87,16 +87,19 @@ const ProjectorView = () => {
         {/* Upper Area: Game Elements */}
         <div className="flex items-center justify-between w-full px-16 flex-1 gap-10">
           {/* Left: Players (Bars) */}
-          <div className="w-72 h-full flex flex-col justify-center">
-            <PlayerList />
-            {/* Total Pot for Round */}
-            <div className="mt-4 flex flex-col items-center">
+          <div className="w-72 h-full flex flex-col items-center overflow-hidden">
+            {/* Total Pot for Round (Moved to Top for visibility) */}
+            <div className="mb-8 flex flex-col items-center flex-shrink-0 pt-10">
               <div className="game-puck w-40 h-10">
                 <div className="game-puck-body bg-black"></div>
                 <div className="game-puck-top bg-black border-gray-600 z-20">
                   <span className="text-white font-bold text-sm relative z-30">${bankedMoney.toLocaleString()} TOTAL</span>
                 </div>
               </div>
+            </div>
+
+            <div className="w-full flex-1 overflow-y-auto scroll-smooth no-scrollbar flex justify-center">
+              <PlayerList />
             </div>
           </div>
 
@@ -107,7 +110,7 @@ const ProjectorView = () => {
           </div>
 
           {/* Right: Money Chain (Pucks) */}
-          <div className="w-64 h-full flex items-center justify-end">
+          <div className="w-64 h-full flex items-center justify-center">
             <MoneyChain
               chain={moneyChain}
               currentLevel={currentLevel}

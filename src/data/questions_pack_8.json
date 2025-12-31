@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Música",
+    "question": "¿Instrumento con teclas blancas y negras?",
+    "answer": "Piano"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Red social del pajarito azul?",
+    "answer": "Twitter / X"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Compañero de Sherlock Holmes?",
+    "answer": "Watson"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Cuántos jugadores hay en un equipo de fútbol?",
+    "answer": "11"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Centro del átomo?",
+    "answer": "Núcleo"
+  }
+]

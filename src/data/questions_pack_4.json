@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Geografía",
+    "question": "¿Río más largo del mundo?",
+    "answer": "Amazonas"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Deporte de Michael Jordan?",
+    "answer": "Baloncesto"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Ogro verde famoso?",
+    "answer": "Shrek"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Raíz cuadrada de 144?",
+    "answer": "12"
+  },
+  {
+    "category": "Idiomas",
+    "question": "¿Cómo se dice 'Gracias' en francés?",
+    "answer": "Merci"
+  }
+]

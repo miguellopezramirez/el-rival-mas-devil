@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Astronomía",
+    "question": "¿Planeta Rojo?",
+    "answer": "Marte"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Villano de Star Wars?",
+    "answer": "Darth Vader"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Moneda de Reino Unido?",
+    "answer": "Libra Esterlina"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Hueso más largo?",
+    "answer": "Fémur"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Pintó la Mona Lisa?",
+    "answer": "Da Vinci"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Cuerpo Humano",
+    "question": "¿Cuántos dientes tiene un adulto?",
+    "answer": "32"
+  },
+  {
+    "category": "Física",
+    "question": "¿Fuerza que nos atrae al suelo?",
+    "answer": "Gravedad"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Italia?",
+    "answer": "Roma"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Compañía de Mickey Mouse?",
+    "answer": "Disney"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Civilización de las pirámides?",
+    "answer": "Egipcia"
+  }
+]

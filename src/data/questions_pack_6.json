@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Animales",
+    "question": "¿Mamífero que vuela?",
+    "answer": "Murciélago"
+  },
+  {
+    "category": "Lengua",
+    "question": "¿Antónimo de 'Falso'?",
+    "answer": "Verdadero"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Tenista español famoso?",
+    "answer": "Rafa Nadal"
+  },
+  {
+    "category": "Videojuegos",
+    "question": "¿Fontanero de Nintendo?",
+    "answer": "Mario"
+  },
+  {
+    "category": "Cocina",
+    "question": "¿Ingrediente principal del Guacamole?",
+    "answer": "Aguacate"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Geografía",
+    "question": "¿Capital de España?",
+    "answer": "Madrid"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién es Iron Man?",
+    "answer": "Tony Stark"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Año de la independencia de México?",
+    "answer": "1810"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Elemento H?",
+    "answer": "Hidrógeno"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Rey del fútbol?",
+    "answer": "Pelé"
+  }
+]

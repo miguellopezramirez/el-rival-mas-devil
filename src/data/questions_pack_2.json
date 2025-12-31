@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Música",
+    "question": "¿Rey del Pop?",
+    "answer": "Michael Jackson"
+  },
+  {
+    "category": "Animales",
+    "question": "¿El animal más rápido?",
+    "answer": "Guepardo"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Creador de Microsoft?",
+    "answer": "Bill Gates"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Autor de Harry Potter?",
+    "answer": "J.K. Rowling"
+  },
+  {
+    "category": "Comida",
+    "question": "¿Patria del Sushi?",
+    "answer": "Japón"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Química",
+    "question": "¿Fórmula del agua?",
+    "answer": "H2O"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Primer hombre en la Luna?",
+    "answer": "Neil Armstrong"
+  },
+  {
+    "category": "Entretenimiento",
+    "question": "¿Plataforma de videos más famosa?",
+    "answer": "YouTube"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Continente de Egipto?",
+    "answer": "África"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué juguete es Woody?",
+    "answer": "Un vaquero"
+  }
+]

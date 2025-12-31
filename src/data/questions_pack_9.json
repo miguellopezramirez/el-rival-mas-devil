@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Mitología",
+    "question": "¿Dios del trueno nórdico?",
+    "answer": "Thor"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Océano más grande?",
+    "answer": "Pacífico"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Figura de tres lados?",
+    "answer": "Triángulo"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Pez payaso buscando a su hijo?",
+    "answer": "Nemo"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Qué respiran los peces?",
+    "answer": "Oxígeno (por branquias)"
+  }
+]

@@ -2,7 +2,7 @@ import React from 'react';
 
 const MoneyChain = ({ chain, currentLevel, bankedMoney }) => {
   return (
-    <div className="flex flex-col h-full items-center justify-end w-full max-w-[200px] pb-10">
+    <div className="flex flex-col h-full items-center justify-center w-full max-w-[200px]">
 
       {/* Money Stack: Reversed visually to stash upwards */}
       <div className="flex flex-col-reverse w-full gap-[-5px]">

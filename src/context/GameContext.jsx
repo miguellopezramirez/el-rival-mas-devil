@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import questionsData from '../data/questions.json';
+import { questionPacks } from '../data';
+// Fallback or Initial Data
+const defaultQuestions = questionPacks[0].data;
 import { mockMoneyChain } from '../data/mock';
 import { useGameSounds } from '../hooks/useGameSounds';
 import { useGameSync } from '../hooks/useGameSync';
@@ -38,10 +40,13 @@ export const GameProvider = ({ children }) => {
   const [timer, setTimer] = useState(() => loadState('timer', 120));
   const [isTimerRunning, setIsTimerRunning] = useState(false); // Don't persist running state
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(() => loadState('currentQuestionIndex', 0));
-  const [isQuestionVisible, setIsQuestionVisible] = useState(false); // Default hidden on load/refresh logic? Or persist? Let's NOT persist simplicity or maybe persist.
   // User said "hide on round start". So default false. Persistence might be good if refreshed mid-read.
   // I'll persist it.
-  // const [isQuestionVisible, setIsQuestionVisible] = useState(() => loadState('isQuestionVisible', false));
+  const [isQuestionVisible, setIsQuestionVisible] = useState(() => loadState('isQuestionVisible', false));
+
+  // Question Packs
+  const [selectedPackId, setSelectedPackId] = useState(() => loadState('selectedPackId', 'default'));
+  const questionsData = questionPacks.find(p => p.id === selectedPackId)?.data || defaultQuestions;
 
   // Chains
   // {level:0, value:0} is index 0.
@@ -59,7 +64,8 @@ export const GameProvider = ({ children }) => {
     isTimerRunning,
     currentQuestionIndex,
     roundNumber,
-    isQuestionVisible
+    isQuestionVisible,
+    selectedPackId
   };
 
   // Determine Role (Simple location check)
@@ -79,6 +85,7 @@ export const GameProvider = ({ children }) => {
       setCurrentQuestionIndex(receivedState.currentQuestionIndex);
       setRoundNumber(receivedState.roundNumber);
       setIsQuestionVisible(receivedState.isQuestionVisible);
+      setSelectedPackId(receivedState.selectedPackId);
     }
   };
 
@@ -123,10 +130,11 @@ export const GameProvider = ({ children }) => {
       localStorage.setItem('rival_weakest_timer', JSON.stringify(timer));
       localStorage.setItem('rival_weakest_currentQuestionIndex', JSON.stringify(currentQuestionIndex));
       localStorage.setItem('rival_weakest_isQuestionVisible', JSON.stringify(isQuestionVisible));
+      localStorage.setItem('rival_weakest_selectedPackId', JSON.stringify(selectedPackId));
     }
   }, [
     gameStatus, players, currentPlayerIndex, currentLevelIndex,
-    bankedMoney, timer, isTimerRunning, currentQuestionIndex, roundNumber, isQuestionVisible
+    bankedMoney, timer, isTimerRunning, currentQuestionIndex, roundNumber, isQuestionVisible, selectedPackId
   ]);
 
   // --- Effects ---
@@ -315,6 +323,11 @@ export const GameProvider = ({ children }) => {
     }
   };
 
+  const changeQuestionPack = (packId) => {
+    setSelectedPackId(packId);
+    setCurrentQuestionIndex(0); // Reset index when pack changes to avoid out of bounds
+  };
+
   const value = {
     gameStatus,
     players,
@@ -338,8 +351,9 @@ export const GameProvider = ({ children }) => {
     resetTimer,
     currentLevelIndex, setCurrentLevelIndex, // Exposed for God Mode
 
-    question: questionsData[currentQuestionIndex],
+    question: questionsData[currentQuestionIndex] || { question: "No Question", answer: "-", category: "-" }, // Safety check
     isQuestionVisible, toggleQuestionVisibility, // Exposed for logic
+    questionPacks, selectedPackId, changeQuestionPack, // Pack selection
     handleCorrect,
     handleIncorrect,
     handleBank,

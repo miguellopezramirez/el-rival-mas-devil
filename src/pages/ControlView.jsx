@@ -37,7 +37,7 @@ const ControlView = () => {
 
   if (gameStatus === 'REGISTRATION') {
     return (
-      <div className="relative">
+      <div className="relative h-screen w-screen overflow-y-auto bg-[#000510]">
         <button
           onClick={openProjector}
           className="absolute top-4 right-4 z-[9999] flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded shadow-lg"
@@ -114,43 +114,61 @@ const ControlView = () => {
       </div>
 
       {/* --- MAIN COLUMNS --- */}
-      <div className="w-full h-full flex flex-col items-center pt-20 pb-4">
+      <div className="w-full min-h-full flex pt-20 pb-4">
 
-        {/* Upper Area: Game Elements */}
-        <div className="flex items-center justify-between w-full px-16 flex-1 gap-10">
-          {/* Left: Players (Bars) */}
-          <div className="w-72 h-full flex flex-col justify-center">
-            {/* PlayerList now handles obtaining players from context */}
-            <PlayerList />
-            {/* Total Pot for Round */}
-            <div className="mt-4 flex flex-col items-center">
-              <div className="game-puck w-40 h-10">
-                <div className="game-puck-body bg-black"></div>
-                <div className="game-puck-top bg-black border-gray-600 z-20">
-                  <span className="text-white font-bold text-sm relative z-30">${bankedMoney.toLocaleString()} TOTAL</span>
-                </div>
+        {/* Left: Players & Total Pot */}
+        <div className="w-80 min-h-full flex flex-col px-6 border-r border-white/10 bg-black/20">
+          {/* Total Pot (Moved Up) */}
+          <div className="flex flex-col items-center mb-6 pt-4">
+            <div className="game-puck w-48 h-12">
+              <div className="game-puck-body bg-indigo-900/50"></div>
+              <div className="game-puck-top bg-black/80 border-indigo-500 z-20 flex items-center justify-center">
+                <span className="text-white font-bold text-lg relative z-30 drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">
+                  ★ ${bankedMoney.toLocaleString()} ★
+                </span>
               </div>
             </div>
+            <span className="text-indigo-300 text-xs uppercase tracking-widest mt-2 font-bold">Total Acumulado</span>
           </div>
 
-          {/* Center: Blue Tank (Questions) */}
-          <div className="flex-1 h-3/5 flex items-center justify-center relative">
-            <Jumbotron question={question} />
-          </div>
-
-          {/* Right: Money Chain (Pucks) */}
-          <div className="w-64 h-full flex items-center justify-end">
-            <MoneyChain
-              chain={moneyChain}
-              currentLevel={currentLevel}
-              bankedMoney={bankedMoney}
-            />
+          {/* PlayerList */}
+          <div className="flex-1 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+            <PlayerList />
           </div>
         </div>
 
-        {/* Lower Area: Controls */}
-        <div className="w-full flex justify-center pb-4 z-50">
-          <GameControls />
+        {/* Center: Question & Controls */}
+        <div className="flex-1 min-h-full flex flex-col items-center relative px-8">
+
+          {/* Question Area */}
+          <div className="w-full flex-1 flex items-center justify-center py-4">
+            <div className="w-full max-w-3xl">
+              <Jumbotron question={question} showAnswer={true} />
+            </div>
+          </div>
+
+          {/* Controls Area */}
+          <div className="w-full flex justify-center pb-8 sticky bottom-0 bg-[#000510]/80 backdrop-blur-sm z-30 py-4">
+            <GameControls />
+          </div>
+
+          <div className="flex gap-2 mb-4">
+            <button
+              onClick={toggleQuestionVisibility}
+              className={`px-4 py-2 rounded font-bold uppercase tracking-widest text-xs shadow ${isQuestionVisible ? 'bg-yellow-600 text-black' : 'bg-gray-700 text-gray-300'}`}
+            >
+              {isQuestionVisible ? 'Ocultar (Proyector)' : 'Mostrar (Proyector)'}
+            </button>
+          </div>
+        </div>
+
+        {/* Right: Money Chain */}
+        <div className="w-64 min-h-full flex items-center justify-center border-l border-white/10 bg-black/20">
+          <MoneyChain
+            chain={moneyChain}
+            currentLevel={currentLevel}
+            bankedMoney={bankedMoney}
+          />
         </div>
 
       </div>

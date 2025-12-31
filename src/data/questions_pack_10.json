@@ -1,0 +1,27 @@
+[
+  {
+    "category": "General",
+    "question": "¿Color de la esperanza?",
+    "answer": "Verde"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Reina de Egipto famosa?",
+    "answer": "Cleopatra"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Evento cada 4 años?",
+    "answer": "Juegos Olímpicos"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Planeta con anillos?",
+    "answer": "Saturno"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Escultor del David?",
+    "answer": "Miguel Ángel"
+  }
+]

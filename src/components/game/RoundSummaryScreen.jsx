@@ -4,7 +4,7 @@ import { useGameSounds } from '../../hooks/useGameSounds';
 import { Trophy, ThumbsDown, ArrowRight, Undo2, PartyPopper } from 'lucide-react';
 
 const RoundSummaryScreen = ({ isProjector = false }) => {
-  const { players, bankedMoney, startGame, eliminatePlayer, revivePlayer } = useGame();
+  const { players, bankedMoney, startGame, eliminatePlayer, revivePlayer, questionPacks, selectedPackId, changeQuestionPack } = useGame();
   const { playWin } = useGameSounds();
 
   // Filter ONLY active players for the report (Strongest/Weakest/Table) as requested
@@ -139,6 +139,22 @@ const RoundSummaryScreen = ({ isProjector = false }) => {
                   </button>
                 );
               })}
+            </div>
+          </div>
+
+          <div className="w-full max-w-4xl mb-8 p-6 bg-blue-900/10 border border-blue-500/30 rounded-lg">
+            <h3 className="text-xl font-bold text-blue-500 uppercase tracking-widest mb-4">Configurar Siguiente Ronda</h3>
+            <div className="flex flex-col gap-2">
+              <label className="text-gray-400 text-sm uppercase tracking-wider font-bold">Pack de Preguntas</label>
+              <select
+                className="bg-black text-white p-2 rounded border border-gray-600 focus:border-blue-500 outline-none"
+                value={selectedPackId}
+                onChange={(e) => changeQuestionPack(e.target.value)}
+              >
+                {questionPacks.map(pack => (
+                  <option key={pack.id} value={pack.id}>{pack.name} ({pack.data.length} preguntas)</option>
+                ))}
+              </select>
             </div>
           </div>
 
