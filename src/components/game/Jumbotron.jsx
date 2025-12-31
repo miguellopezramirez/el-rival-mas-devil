@@ -8,10 +8,13 @@ const Jumbotron = ({ question }) => {
       {/* Content */}
       <div className="z-10 bg-[#001133ab] p-6 rounded-xl border border-white/10 shadow-inner">
         <h2 className="text-game-cyan text-sm uppercase tracking-[0.3em] font-bold mb-4 opacity-70">
-          Pregunta Actual
+          {question.category || "Pregunta Actual"}
         </h2>
         <p className="text-3xl md:text-5xl font-bold leading-snug drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-          {question.text}
+          {question.question}
+        </p>
+        <p className="mt-6 text-xl text-yellow-400 font-mono opacity-80">
+          R: {question.answer}
         </p>
       </div>
 

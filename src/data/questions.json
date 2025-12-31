@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Astronomía",
+    "question": "¿Cuál es el planeta más cercano al Sol?",
+    "answer": "Mercurio"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué año llegó Cristóbal Colón a América?",
+    "answer": "1492"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Cuánto es 7 x 8?",
+    "answer": "56"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Francia?",
+    "answer": "París"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cuál es el símbolo químico del oro?",
+    "answer": "Au"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'Don Quijote de la Mancha'?",
+    "answer": "Miguel de Cervantes"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Qué país ganó el mundial de fútbol de 2022?",
+    "answer": "Argentina"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién dirigió la película 'Titanic'?",
+    "answer": "James Cameron"
+  }
+]

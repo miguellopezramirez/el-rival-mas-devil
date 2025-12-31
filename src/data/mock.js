@@ -10,6 +10,7 @@ export const mockPlayers = [
 ];
 
 export const mockMoneyChain = [
+  { level: 0, value: 0 },
   { level: 1, value: 1000 },
   { level: 2, value: 2000 },
   { level: 3, value: 5000 },

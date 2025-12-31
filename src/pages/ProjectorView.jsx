@@ -2,12 +2,21 @@ import React, { useState } from 'react';
 import PlayerList from '../components/game/PlayerList';
 import Jumbotron from '../components/game/Jumbotron';
 import MoneyChain from '../components/game/MoneyChain';
-import { mockPlayers, mockMoneyChain, mockQuestion, mockGameState } from '../data/mock';
+import GameControls from '../components/game/GameControls';
+import { useGame } from '../context/GameContext';
+import { mockPlayers } from '../data/mock';
 
 const ProjectorView = () => {
   const [players, setPlayers] = useState(mockPlayers);
-  const [question, setQuestion] = useState(mockQuestion);
-  const [gameState, setGameState] = useState(mockGameState);
+  const { moneyChain, currentLevel, bankedMoney, timer, question, handleBank } = useGame();
+
+  // Format timer MM:SS (or just seconds if specific preference)
+  // Request said "0:45", so let's format nice
+  const formatTime = (seconds) => {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${s < 10 ? '0' : ''}${s}`;
+  };
 
   return (
     <div className="flex h-screen w-screen overflow-hidden relative font-sans">
@@ -22,16 +31,17 @@ const ProjectorView = () => {
       <div className="absolute top-6 left-8 z-50">
         <div className="border-2 border-game-blue bg-black/80 rounded-lg px-6 py-2 shadow-[0_0_15px_rgba(0,85,255,0.5)]">
           <span className="text-4xl font-mono font-bold text-white tracking-widest">
-            0:{gameState.timer}
+            {formatTime(timer)}
           </span>
         </div>
       </div>
 
-      {/* Button ADD TO POT (Top Center) */}
-      <div className="absolute top-6 left-1/2 -translate-x-1/2 z-50">
-        <button className="bg-gradient-to-b from-gray-500 to-gray-700 border-2 border-white/50 text-white font-bold px-8 py-2 rounded uppercase tracking-widest shadow-lg active:scale-95 transition-transform">
-          ADD TO POT
-        </button>
+      {/* Button ADD TO POT (Top Center) Visual Indicator mainly - actual action now in Controls */}
+      <div className="absolute top-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-50">
+        {/* Kept for visual reference if needed, but 'BANCO' button handles this now visually in bottom center? 
+             Actually prompt said "Botón 'BANCO': El dinero acumulado... Implementa los botones de control en la parte inferior central."
+             So we can remove this top one or keep it as a status indicator. Let's remove to not confuse. 
+         */}
       </div>
 
       {/* Round Indicator (Top Right) */}
@@ -43,34 +53,46 @@ const ProjectorView = () => {
 
 
       {/* --- MAIN COLUMNS --- */}
-      <div className="w-full h-full flex items-center justify-between px-16 pt-20 pb-10 gap-10">
+      <div className="w-full h-full flex flex-col items-center pt-20 pb-4">
 
-        {/* Left: Players (Bars) */}
-        <div className="w-72 h-full flex flex-col justify-center">
-          <PlayerList players={players} />
-          {/* Total Pot for Players */}
-          <div className="mt-4 flex flex-col items-center">
-            <div className="game-puck w-40 h-10">
-              <div className="game-puck-body bg-black"></div>
-              <div className="game-puck-top bg-black border-gray-600 z-20">
-                <span className="text-white font-bold text-sm relative z-30">$0 TOTAL</span>
+        {/* Upper Area: Game Elements */}
+        <div className="flex items-center justify-between w-full px-16 flex-1 gap-10">
+          {/* Left: Players (Bars) */}
+          <div className="w-72 h-full flex flex-col justify-center">
+            <PlayerList players={players} />
+            {/* Total Pot for Players */}
+            {/* Not explicitly wired yet, using static $0 for round pot display or could be bankedMoney? 
+                 Req: "dinero acumulado... se suma al 'POZO TOTAL' de la ronda". 
+                 Let's show a global pot or round pot. 'bankedMoney' is "Round Bank". 
+             */}
+            <div className="mt-4 flex flex-col items-center">
+              <div className="game-puck w-40 h-10">
+                <div className="game-puck-body bg-black"></div>
+                <div className="game-puck-top bg-black border-gray-600 z-20">
+                  <span className="text-white font-bold text-sm relative z-30">${bankedMoney.toLocaleString()} TOTAL</span>
+                </div>
               </div>
             </div>
           </div>
+
+          {/* Center: Blue Tank (Questions) */}
+          <div className="flex-1 h-3/5 flex items-center justify-center relative">
+            <Jumbotron question={question} />
+          </div>
+
+          {/* Right: Money Chain (Pucks) */}
+          <div className="w-64 h-full flex items-center justify-end">
+            <MoneyChain
+              chain={moneyChain}
+              currentLevel={currentLevel}
+              bankedMoney={bankedMoney}
+            />
+          </div>
         </div>
 
-        {/* Center: Blue Tank (Questions) */}
-        <div className="flex-1 h-3/5 flex items-center justify-center relative">
-          <Jumbotron question={question} />
-        </div>
-
-        {/* Right: Money Chain (Pucks) */}
-        <div className="w-64 h-full flex items-center justify-end">
-          <MoneyChain
-            chain={mockMoneyChain}
-            currentLevel={gameState.currentMoneyLevel}
-            bankedMoney={gameState.bankedMoney}
-          />
+        {/* Lower Area: Controls */}
+        <div className="w-full flex justify-center pb-4 z-50">
+          <GameControls />
         </div>
 
       </div>
