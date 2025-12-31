@@ -1,68 +1,91 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --color-game-dark: #020b1c;
+  --color-game-blue: #0055ff;
+  --color-game-cyan: #00ffff;
+  --color-game-gold: #d4af37;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased overflow-hidden;
+    background: radial-gradient(circle at center, #001a4d 0%, #000000 90%);
   }
-  a:hover {
-    color: #747bff;
+}
+
+@layer components {
+
+  /* --- 3D PUCKS (Money) --- */
+  .game-puck {
+    @apply relative w-full h-10 mb-2 flex items-center justify-center transition-transform duration-300;
   }
-  button {
-    background-color: #f9f9f9;
+
+  /* The "Top" of the puck (Oval) */
+  .game-puck-top {
+    @apply absolute top-0 w-full h-full rounded-full border border-white/30 flex items-center justify-center z-20;
+    /* Text sits here, must be high z-index */
+    background: linear-gradient(180deg, #0044aa 0%, #002266 100%);
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  }
+
+  /* The "Body/Side" of the puck (giving it height/thickness) */
+  .game-puck-body {
+    @apply absolute top-2 w-full h-full rounded-full bg-[#001133] z-0;
+    /* Body sits behind */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  /* GOLD PUCK VARIANT */
+  .game-puck-gold .game-puck-top {
+    background: linear-gradient(180deg, #daa520 0%, #b8860b 100%);
+    border-color: #ffd700;
+    box-shadow:
+      0 0 15px rgba(218, 165, 32, 0.6),
+      inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  }
+
+  .game-puck-gold .game-puck-body {
+    background: #8b4500;
+  }
+
+  .game-puck-gold {
+    @apply scale-105 z-30;
+  }
+
+  /* --- CURVED BARS (Players) --- */
+  .game-bar {
+    @apply relative w-full h-12 mb-1 flex items-center px-4 overflow-hidden z-10;
+    /* Simulate a curved surface with a horizontal gradient highlight */
+    background: linear-gradient(90deg,
+        #001133 0%,
+        #0033cc 20%,
+        #0055ff 50%,
+        #0033cc 80%,
+        #001133 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .game-bar-eliminated {
+    @apply grayscale opacity-50;
+    background: linear-gradient(90deg, #222 0%, #444 50%, #222 100%);
+  }
+
+  /* --- BLUE TANK (Jumbotron) --- */
+  .game-tank {
+    @apply relative w-full h-full rounded-3xl border-4 border-[#002266];
+    background: radial-gradient(circle at 50% 30%, #0066ff 0%, #001133 80%);
+    box-shadow:
+      0 0 30px rgba(0, 85, 255, 0.2),
+      inset 0 0 60px rgba(0, 0, 0, 0.6);
+  }
+
+  /* The "Lid" of the tank */
+  .game-tank::before {
+    content: '';
+    @apply absolute -top-6 left-1/2 -translate-x-1/2 w-[90%] h-12 bg-[#002266] rounded-[100%];
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
 }
