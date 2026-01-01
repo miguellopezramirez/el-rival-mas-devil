@@ -81,11 +81,18 @@ export const useGameSounds = () => {
   const playBank = useCallback(() => playSynth('BANK'), []);
   const playTimeout = useCallback(() => playSynth('TIMEOUT'), []);
 
+  const playIntro = useCallback(() => {
+    const audio = new Audio('/sound_6825472f3fb43.mp3');
+    audio.volume = 0.5;
+    audio.play().catch(e => console.error("Audio play failed", e));
+  }, []);
+
   return {
     playCorrect,
     playIncorrect,
     playBank,
     playTimeout,
-    playWin: useCallback(() => playSynth('WIN'), [])
+    playWin: useCallback(() => playSynth('WIN'), []),
+    playIntro
   };
 };

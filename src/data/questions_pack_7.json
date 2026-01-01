@@ -1,27 +1,497 @@
 [
   {
-    "category": "Cuerpo Humano",
-    "question": "¿Cuántos dientes tiene un adulto?",
-    "answer": "32"
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Australia (muchos creen que es Sídney)?",
+    "answer": "Canberra"
   },
   {
-    "category": "Física",
-    "question": "¿Fuerza que nos atrae al suelo?",
-    "answer": "Gravedad"
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Liechtenstein?",
+    "answer": "Vaduz"
   },
   {
-    "category": "Geografía",
-    "question": "¿Capital de Italia?",
-    "answer": "Roma"
+    "category": "Gastronomía",
+    "question": "¿De qué país es originario el plato 'Pad Thai'?",
+    "answer": "Tailandia"
   },
   {
-    "category": "Cine",
-    "question": "¿Compañía de Mickey Mouse?",
-    "answer": "Disney"
+    "category": "Moda",
+    "question": "¿Qué diseñadora francesa popularizó el 'Little Black Dress' (pequeño vestido negro)?",
+    "answer": "Coco Chanel"
   },
   {
-    "category": "Historia",
-    "question": "¿Civilización de las pirámides?",
-    "answer": "Egipcia"
+    "category": "Videojuegos",
+    "question": "¿Cuál fue el primer videojuego en el que apareció el personaje de Mario (entonces llamado Jumpman)?",
+    "answer": "Donkey Kong"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Mongolia?",
+    "answer": "Ulán Bator"
+  },
+  {
+    "category": "Negocios",
+    "question": "¿Con qué nombre se fundó originalmente la empresa Nike?",
+    "answer": "Blue Ribbon Sports"
+  },
+  {
+    "category": "Anime / Manga",
+    "question": "¿Quién es el creador de 'Dragon Ball'?",
+    "answer": "Akira Toriyama"
+  },
+  {
+    "category": "Citas Célebres",
+    "question": "¿Qué filósofo dijo la frase: 'El infierno son los otros'?",
+    "answer": "Jean-Paul Sartre"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Pakistán?",
+    "answer": "Islamabad"
+  },
+  {
+    "category": "Inventos",
+    "question": "¿Quién inventó la dinamita y luego fundó los premios que llevan su nombre?",
+    "answer": "Alfred Nobel"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Chipre?",
+    "answer": "Nicosia"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué ingrediente básico se necesita para hacer un 'Risotto' (tipo de grano)?",
+    "answer": "Arroz Arborio (o Carnaroli)"
+  },
+  {
+    "category": "Cómics",
+    "question": "¿Cómo se llama el mayordomo leal de Batman?",
+    "answer": "Alfred Pennyworth"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Kenia?",
+    "answer": "Nairobi"
+  },
+  {
+    "category": "Moda",
+    "question": "¿Qué diseñador es famoso por sus suelas de zapatos rojas?",
+    "answer": "Christian Louboutin"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Nueva Zelanda?",
+    "answer": "Wellington"
+  },
+  {
+    "category": "Videojuegos",
+    "question": "¿Qué compañía desarrolló la franquicia 'Final Fantasy'?",
+    "answer": "Square (ahora Square Enix)"
+  },
+  {
+    "category": "Enología",
+    "question": "¿De qué tipo de uva se hace principalmente el vino Rioja?",
+    "answer": "Tempranillo"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Vietnam?",
+    "answer": "Hanói"
+  },
+  {
+    "category": "Negocios",
+    "question": "¿Quién es el fundador de Amazon?",
+    "answer": "Jeff Bezos"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Nigeria (no es Lagos)?",
+    "answer": "Abuya"
+  },
+  {
+    "category": "Anime",
+    "question": "¿Cómo se llama la película de Studio Ghibli ganadora del Oscar en 2003?",
+    "answer": "El viaje de Chihiro"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Arabia Saudita?",
+    "answer": "Riad"
+  },
+  {
+    "category": "Inventos",
+    "question": "¿A quién se atribuye la invención de la bombilla incandescente comercialmente viable?",
+    "answer": "Thomas Edison"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Cuál es el pimiento más picante del mundo según el récord Guinness actual (2023/24)?",
+    "answer": "Pepper X (superó al Carolina Reaper)"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Filipinas?",
+    "answer": "Manila"
+  },
+  {
+    "category": "Citas Célebres",
+    "question": "¿Qué líder dijo: 'Tengo un sueño' (I have a dream)?",
+    "answer": "Martin Luther King Jr."
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Etiopía?",
+    "answer": "Adís Abeba"
+  },
+  {
+    "category": "Moda",
+    "question": "¿Quién sucedió a Gianni Versace como director creativo tras su muerte?",
+    "answer": "Donatella Versace"
+  },
+  {
+    "category": "Videojuegos",
+    "question": "¿Cómo se llama el protagonista de la saga 'The Legend of Zelda'?",
+    "answer": "Link"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Senegal?",
+    "answer": "Dakar"
+  },
+  {
+    "category": "Marcas",
+    "question": "¿Qué marca de automóviles tiene un logotipo con cuatro aros entrelazados?",
+    "answer": "Audi"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Irak?",
+    "answer": "Bagdad"
+  },
+  {
+    "category": "Cómic",
+    "question": "¿Cuál es el verdadero nombre de Spider-Man?",
+    "answer": "Peter Parker"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Malasia?",
+    "answer": "Kuala Lumpur"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué es el 'caviar'?",
+    "answer": "Huevas de esturión curadas con sal"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Islandia?",
+    "answer": "Reikiavik"
+  },
+  {
+    "category": "Inventos",
+    "question": "¿Qué ingeniero inventó la radio (aunque hubo disputa con Tesla)?",
+    "answer": "Guglielmo Marconi"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Ghana?",
+    "answer": "Accra"
+  },
+  {
+    "category": "Enología",
+    "question": "¿Qué país es el mayor productor de vino del mundo (varía con Francia, pero históricamente)?",
+    "answer": "Italia"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Nepal?",
+    "answer": "Katmandú"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿Qué banda británica tenía como cantante a Freddie Mercury?",
+    "answer": "Queen"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Siria?",
+    "answer": "Damasco"
+  },
+  {
+    "category": "Videojuegos",
+    "question": "¿Cuál es el videojuego más vendido de la historia?",
+    "answer": "Minecraft"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Jamaica?",
+    "answer": "Kingston"
+  },
+  {
+    "category": "Moda",
+    "question": "¿Qué revista de moda es conocida como la 'Biblia de la moda'?",
+    "answer": "Vogue"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Croacia?",
+    "answer": "Zagreb"
+  },
+  {
+    "category": "Anime",
+    "question": "¿En qué anime los personajes usan 'Equipos de Maniobras Tridimensionales' para pelear contra gigantes?",
+    "answer": "Attack on Titan (Shingeki no Kyojin)"
+  },
+  {
+    "category": "Negocios",
+    "question": "¿Qué empresa es dueña de Instagram y WhatsApp?",
+    "answer": "Meta (o Facebook)"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Marruecos?",
+    "answer": "Rabat"
+  },
+  {
+    "category": "Citas Célebres",
+    "question": "¿Quién dijo: 'Ser o no ser, esa es la cuestión'?",
+    "answer": "William Shakespeare (Hamlet)"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Bulgaria?",
+    "answer": "Sofía"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué cóctel se prepara con ron, menta, lima, azúcar y soda?",
+    "answer": "Mojito"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Líbano?",
+    "answer": "Beirut"
+  },
+  {
+    "category": "Inventos",
+    "question": "¿Quién inventó el teléfono (oficialmente reconocido recientemente como Antonio Meucci, pero ¿quién tuvo la patente por años)?",
+    "answer": "Alexander Graham Bell"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Eslovenia?",
+    "answer": "Liubliana"
+  },
+  {
+    "category": "Cómics",
+    "question": "¿De qué metal está hecho el esqueleto de Wolverine?",
+    "answer": "Adamantium"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Indonesia (antes de su cambio planeado a Nusantara)?",
+    "answer": "Yakarta"
+  },
+  {
+    "category": "Enología",
+    "question": "¿Qué hongo se conoce como 'podredumbre noble' y se usa para vinos dulces como el Sauternes?",
+    "answer": "Botrytis cinerea"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Bangladés?",
+    "answer": "Daca (Dhaka)"
+  },
+  {
+    "category": "Videojuegos",
+    "question": "¿En qué año se lanzó la primera PlayStation en Japón?",
+    "answer": "1994"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Costa Rica?",
+    "answer": "San José"
+  },
+  {
+    "category": "Moda",
+    "question": "¿Qué diseñador español fue el maestro de la alta costura en el siglo XX (rival de Chanel)?",
+    "answer": "Cristóbal Balenciaga"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Austria?",
+    "answer": "Viena"
+  },
+  {
+    "category": "Negocios",
+    "question": "¿Qué familia fundó la cadena de supermercados Walmart?",
+    "answer": "Familia Walton"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Haití?",
+    "answer": "Puerto Príncipe"
+  },
+  {
+    "category": "Anime",
+    "question": "¿Cómo se llama el pirata protagonista de 'One Piece'?",
+    "answer": "Monkey D. Luffy"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Jordania?",
+    "answer": "Amán"
+  },
+  {
+    "category": "Citas Célebres",
+    "question": "¿Qué científico dijo: 'Dios no juega a los dados con el universo'?",
+    "answer": "Albert Einstein"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Eslovaquia?",
+    "answer": "Bratislava"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué es el tofu?",
+    "answer": "Queso de soja (cuajada de leche de soja)"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Tanzania?",
+    "answer": "Dodoma"
+  },
+  {
+    "category": "Inventos",
+    "question": "¿Qué inventó Johannes Gutenberg?",
+    "answer": "La imprenta de tipos móviles"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Qatar?",
+    "answer": "Doha"
+  },
+  {
+    "category": "Videojuegos",
+    "question": "¿Qué empresa creó a Sonic el erizo?",
+    "answer": "Sega"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Estonia?",
+    "answer": "Tallin"
+  },
+  {
+    "category": "Moda",
+    "question": "¿Qué marca de lujo utiliza un patrón de cuadros beige, negro, blanco y rojo?",
+    "answer": "Burberry"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Madagascar?",
+    "answer": "Antananarivo"
+  },
+  {
+    "category": "Cómics",
+    "question": "¿Quién es el archienemigo de Superman?",
+    "answer": "Lex Luthor"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Azerbaiyán?",
+    "answer": "Bakú"
+  },
+  {
+    "category": "Negocios",
+    "question": "¿Qué significa la sigla 'CEO'?",
+    "answer": "Chief Executive Officer"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Lituania?",
+    "answer": "Vilna"
+  },
+  {
+    "category": "Anime",
+    "question": "¿Qué serie de anime presenta un cuaderno que mata a quien se escribe su nombre en él?",
+    "answer": "Death Note"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Zimbabue?",
+    "answer": "Harare"
+  },
+  {
+    "category": "Enología",
+    "question": "¿Cómo se llama el experto encargado del servicio de vinos en un restaurante?",
+    "answer": "Sommelier"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Malta?",
+    "answer": "La Valeta"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿Quién escribió las novelas de 'Harry Potter'?",
+    "answer": "J.K. Rowling"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Camboya?",
+    "answer": "Nom Pen"
+  },
+  {
+    "category": "Inventos",
+    "question": "¿Quiénes inventaron el aeroplano (primer vuelo controlado)?",
+    "answer": "Hermanos Wright"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Bielorrusia?",
+    "answer": "Minsk"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué país es famoso por el 'Kimchi'?",
+    "answer": "Corea del Sur"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Sudán?",
+    "answer": "Jartum"
+  },
+  {
+    "category": "Videojuegos",
+    "question": "¿Qué juego popularizó el género 'Battle Royale' (construcción y disparos)?",
+    "answer": "Fortnite"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Serbia?",
+    "answer": "Belgrado"
+  },
+  {
+    "category": "Moda",
+    "question": "¿Qué diseñador italiano fue asesinado en Miami en 1997?",
+    "answer": "Gianni Versace"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Cuál es la capital de Angola?",
+    "answer": "Luanda"
+  },
+  {
+    "category": "Negocios",
+    "question": "¿Qué empresa fabrica el iPhone?",
+    "answer": "Apple"
+  },
+  {
+    "category": "Capitales (Nivel Experto)",
+    "question": "¿Capital de Uruguay?",
+    "answer": "Montevideo"
   }
 ]

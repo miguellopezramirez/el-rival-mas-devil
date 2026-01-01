@@ -1,27 +1,497 @@
 [
   {
     "category": "Geografía",
-    "question": "¿Capital de España?",
-    "answer": "Madrid"
-  },
-  {
-    "category": "Cine",
-    "question": "¿Quién es Iron Man?",
-    "answer": "Tony Stark"
-  },
-  {
-    "category": "Historia",
-    "question": "¿Año de la independencia de México?",
-    "answer": "1810"
+    "question": "¿Capital de Turquía?",
+    "answer": "Ankara"
   },
   {
     "category": "Ciencia",
-    "question": "¿Elemento H?",
-    "answer": "Hidrógeno"
+    "question": "¿Símbolo químico del Oro?",
+    "answer": "Au"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué año cayó el Muro de Berlín?",
+    "answer": "1989"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Autor de 'El Aleph'?",
+    "answer": "Jorge Luis Borges"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Quién pintó 'La noche estrellada'?",
+    "answer": "Vincent van Gogh"
+  },
+  {
+    "category": "México",
+    "question": "¿En qué estado se encuentran las ruinas de Palenque?",
+    "answer": "Chiapas"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Cuál es el hueso más pequeño del cuerpo humano?",
+    "answer": "Estribo"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Australia?",
+    "answer": "Canberra"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Director de la película 'El Padrino'?",
+    "answer": "Francis Ford Coppola"
+  },
+  {
+    "category": "Mitología",
+    "question": "¿Dios romano de la guerra?",
+    "answer": "Marte"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué gas es el más abundante en la atmósfera terrestre?",
+    "answer": "Nitrógeno"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el último emperador azteca?",
+    "answer": "Cuauhtémoc"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién compuso 'Las cuatro estaciones'?",
+    "answer": "Vivaldi"
   },
   {
     "category": "Deportes",
-    "question": "¿Rey del fútbol?",
-    "answer": "Pelé"
+    "question": "¿En qué año se celebraron los primeros JJ.OO. modernos?",
+    "answer": "1896"
+  },
+  {
+    "category": "México",
+    "question": "¿Nombre real de 'Pancho Villa'?",
+    "answer": "Doroteo Arango"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Nacionalidad del escritor Franz Kafka?",
+    "answer": "Checa"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué elemento tiene el símbolo 'W'?",
+    "answer": "Tungsteno"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el río más largo de Europa?",
+    "answer": "Volga"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Película ganadora del primer Oscar a mejor película?",
+    "answer": "Alas (Wings)"
+  },
+  {
+    "category": "Filosofía",
+    "question": "¿Autor de la frase 'Pienso, luego existo'?",
+    "answer": "René Descartes"
+  },
+  {
+    "category": "México",
+    "question": "¿Quién escribió el Himno Nacional Mexicano (letra)?",
+    "answer": "Francisco González Bocanegra"
+  },
+  {
+    "category": "Astronomía",
+    "question": "¿Nombre de la luna más grande de Saturno?",
+    "answer": "Titán"
+  },
+  {
+    "category": "Religión",
+    "question": "¿En qué monte recibió Moisés los 10 mandamientos?",
+    "answer": "Monte Sinaí"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Tratado que puso fin a la Primera Guerra Mundial?",
+    "answer": "Tratado de Versalles"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Museo donde se encuentra el 'Guernica'?",
+    "answer": "Reina Sofía"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Canadá?",
+    "answer": "Ottawa"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Cómo se llama la división celular de las células sexuales?",
+    "answer": "Meiosis"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿En qué año se lanzó el primer iPhone?",
+    "answer": "2007"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'La Divina Comedia'?",
+    "answer": "Dante Alighieri"
+  },
+  {
+    "category": "México",
+    "question": "¿Cuántos años duró el Porfiriato (aprox)?",
+    "answer": "30 o 34 años"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién dirigió 'La Lista de Schindler'?",
+    "answer": "Steven Spielberg"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Cómo se llama un polígono de 12 lados?",
+    "answer": "Dodecágono"
+  },
+  {
+    "category": "Física",
+    "question": "¿Partícula subatómica con carga neutra?",
+    "answer": "Neutrón"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Estrecho que separa España de África?",
+    "answer": "Gibraltar"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el primer hombre en el espacio?",
+    "answer": "Yuri Gagarin"
+  },
+  {
+    "category": "Música",
+    "question": "¿Vocalista de la banda 'The Doors'?",
+    "answer": "Jim Morrison"
+  },
+  {
+    "category": "México",
+    "question": "¿Capital del estado de Veracruz?",
+    "answer": "Xalapa"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Autor de 'Crónica de una muerte anunciada'?",
+    "answer": "Gabriel García Márquez"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Escala utilizada para medir la dureza de los minerales?",
+    "answer": "Mohs"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Tenista con más Grand Slams de la historia (Masculino)?",
+    "answer": "Novak Djokovic"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿País africano que nunca fue colonizado?",
+    "answer": "Etiopía"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Año de la Revolución Francesa?",
+    "answer": "1789"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Escultor de 'El David'?",
+    "answer": "Miguel Ángel"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Actriz que interpretó a Cleopatra en 1963?",
+    "answer": "Elizabeth Taylor"
+  },
+  {
+    "category": "México",
+    "question": "¿Primer presidente de México?",
+    "answer": "Guadalupe Victoria"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Reino al que pertenecen los hongos?",
+    "answer": "Fungi"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Brasil?",
+    "answer": "Brasilia"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Nombre del caballo de Don Quijote?",
+    "answer": "Rocinante"
+  },
+  {
+    "category": "Música",
+    "question": "¿Género musical originado en Nueva Orleans?",
+    "answer": "Jazz"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Emperador francés que murió en Santa Elena?",
+    "answer": "Napoleón Bonaparte"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Metal líquido utilizado en termómetros antiguos?",
+    "answer": "Mercurio"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Montaña más alta de América?",
+    "answer": "Aconcagua"
+  },
+  {
+    "category": "Cultura",
+    "question": "¿Moneda oficial de Japón?",
+    "answer": "Yen"
+  },
+  {
+    "category": "México",
+    "question": "¿Ciudad prehispánica conocida como 'Lugar de los Dioses'?",
+    "answer": "Teotihuacán"
+  },
+  {
+    "category": "Física",
+    "question": "¿Velocidad de la luz (aprox en km/s)?",
+    "answer": "300,000 km/s"
+  },
+  {
+    "category": "Cine",
+    "question": "¿En qué año se estrenó la primera película de Star Wars?",
+    "answer": "1977"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'La Ilíada' y 'La Odisea'?",
+    "answer": "Homero"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Marruecos?",
+    "answer": "Rabat"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Guerra entre EE.UU. y la URSS sin armas directas?",
+    "answer": "Guerra Fría"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Nombre científico de la mandíbula inferior?",
+    "answer": "Maxilar inferior o Mandíbula"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Pintor español del Cubismo?",
+    "answer": "Pablo Picasso"
+  },
+  {
+    "category": "México",
+    "question": "¿Año del terremoto de 8.1 grados en CDMX?",
+    "answer": "1985"
+  },
+  {
+    "category": "Música",
+    "question": "¿Compositor sordo más famoso?",
+    "answer": "Beethoven"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Mar en el que desemboca el río Nilo?",
+    "answer": "Mediterráneo"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Planeta del sistema solar con más lunas?",
+    "answer": "Saturno"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién dirigió 'Pulp Fiction'?",
+    "answer": "Quentin Tarantino"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Civilización que inventó la pólvora?",
+    "answer": "China"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Libro sagrado del Islam?",
+    "answer": "Corán"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Suiza?",
+    "answer": "Berna"
+  },
+  {
+    "category": "México",
+    "question": "¿Muralista esposo de Frida Kahlo?",
+    "answer": "Diego Rivera"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Molécula que porta la información genética?",
+    "answer": "ADN"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿País anfitrión del mundial de fútbol 2010?",
+    "answer": "Sudáfrica"
+  },
+  {
+    "category": "Física",
+    "question": "¿Quién formuló la Teoría de la Relatividad?",
+    "answer": "Albert Einstein"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Estilo arquitectónico de la catedral de Notre Dame?",
+    "answer": "Gótico"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Desierto más grande del mundo (no polar)?",
+    "answer": "Sahara"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Reina de Inglaterra durante la época victoriana?",
+    "answer": "Victoria"
+  },
+  {
+    "category": "Cultura",
+    "question": "¿Plato típico japonés de pescado crudo?",
+    "answer": "Sashimi"
+  },
+  {
+    "category": "México",
+    "question": "¿Estado mexicano mayor productor de aguacate?",
+    "answer": "Michoacán"
+  },
+  {
+    "category": "Química",
+    "question": "¿Símbolo químico de la Plata?",
+    "answer": "Ag"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Película de Hitchcock sobre un motel?",
+    "answer": "Psicosis"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Autor de 'Los Miserables'?",
+    "answer": "Victor Hugo"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿País conocido como 'La tierra de los mil lagos'?",
+    "answer": "Finlandia"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién asesinó a Abraham Lincoln?",
+    "answer": "John Wilkes Booth"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién es el 'Rey del Rock and Roll'?",
+    "answer": "Elvis Presley"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Unidad de medida de la frecuencia?",
+    "answer": "Hertz"
+  },
+  {
+    "category": "México",
+    "question": "¿Diosa azteca de la muerte?",
+    "answer": "Coatlicue o Mictecacíhuatl"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Sudáfrica?",
+    "answer": "Pretoria, Ciudad del Cabo o Bloemfontein"
+  },
+  {
+    "category": "Entretenimiento",
+    "question": "¿Creador de los Simpson?",
+    "answer": "Matt Groening"
+  },
+  {
+    "category": "Mitología",
+    "question": "¿Héroe griego que mató a Medusa?",
+    "answer": "Perseo"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Año de la llegada del hombre a la Luna?",
+    "answer": "1969"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Autor de 'El Grito'?",
+    "answer": "Edvard Munch"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué actor ganó el Oscar póstumo por 'The Dark Knight'?",
+    "answer": "Heath Ledger"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Estrecho que separa Asia de América?",
+    "answer": "Bering"
+  },
+  {
+    "category": "Química",
+    "question": "¿pH de una sustancia neutra?",
+    "answer": "7"
+  },
+  {
+    "category": "México",
+    "question": "¿Cultura que creó las Cabezas Colosales?",
+    "answer": "Olmeca"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'Romeo y Julieta'?",
+    "answer": "William Shakespeare"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Deporte que se juega en Wimbledon?",
+    "answer": "Tenis"
+  },
+  {
+    "category": "General",
+    "question": "¿Cuántas casillas tiene un tablero de ajedrez?",
+    "answer": "64"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Líder de la independencia de la India?",
+    "answer": "Mahatma Gandhi"
   }
 ]

@@ -8,6 +8,7 @@ import RegistrationScreen from '../components/game/RegistrationScreen';
 import RoundSummaryScreen from '../components/game/RoundSummaryScreen';
 import GodModeModal from '../components/admin/GodModeModal';
 import { useGame } from '../context/GameContext';
+import { useGameSounds } from '../hooks/useGameSounds';
 
 const ControlView = () => {
   const {
@@ -23,6 +24,8 @@ const ControlView = () => {
     isQuestionVisible,
     toggleQuestionVisibility
   } = useGame();
+
+  const { playIntro } = useGameSounds();
 
   // Format timer
   const formatTime = (seconds) => {
@@ -174,6 +177,18 @@ const ControlView = () => {
       </div>
 
       <GodModeModal />
+
+      {/* GLOBAL SOUND BUTTON */}
+      <button
+        onClick={playIntro}
+        className="fixed bottom-4 left-4 z-[9999] bg-yellow-600 hover:bg-yellow-500 text-black p-3 rounded-full shadow-lg border-2 border-yellow-400 transition-transform hover:scale-110"
+        title="Reproducir Intro/Sonido"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </button>
     </div>
   );
 };

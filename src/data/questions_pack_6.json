@@ -1,27 +1,502 @@
 [
   {
-    "category": "Animales",
-    "question": "¿Mamífero que vuela?",
+    "category": "Física Cuántica",
+    "question": "¿Qué nombre recibe la paradoja imaginaria propuesta en 1935 para ilustrar la superposición cuántica?",
+    "answer": "El gato de Schrödinger"
+  },
+  {
+    "category": "Arquitectura",
+    "question": "¿Qué arquitecto brasileño diseñó la ciudad de Brasilia junto con el urbanista Lúcio Costa?",
+    "answer": "Oscar Niemeyer"
+  },
+  {
+    "category": "Literatura Universal",
+    "question": "¿Quién escribió la novela japonesa 'Nieve de primavera', parte de la tetralogía 'El mar de la fertilidad'?",
+    "answer": "Yukio Mishima"
+  },
+  {
+    "category": "Historia Antigua",
+    "question": "¿Qué batalla del año 31 a.C. marcó el fin de la República Romana y el inicio del Imperio?",
+    "answer": "Batalla de Actium"
+  },
+  {
+    "category": "Ópera",
+    "question": "¿Cómo se llama la famosa aria para tenor de la ópera 'Turandot' que termina con 'Vincerò'?",
+    "answer": "Nessun dorma"
+  },
+  {
+    "category": "Filosofía Política",
+    "question": "¿Qué pensadora acuñó el término 'banalidad del mal' al reportar el juicio de Adolf Eichmann?",
+    "answer": "Hannah Arendt"
+  },
+  {
+    "category": "Biología Molecular",
+    "question": "¿Qué enzima es responsable de la replicación del ADN al agregar nucleótidos a la cadena nueva?",
+    "answer": "ADN polimerasa"
+  },
+  {
+    "category": "Geopolítica",
+    "question": "¿Qué término se utiliza para describir la fragmentación de una región en estados más pequeños y hostiles entre sí?",
+    "answer": "Balcanización"
+  },
+  {
+    "category": "Mitología Nórdica",
+    "question": "¿Cómo se llama el puente del arcoíris que conecta Midgard (la Tierra) con Asgard?",
+    "answer": "Bifrost"
+  },
+  {
+    "category": "Arte - Renacimiento",
+    "question": "¿Quién ganó el concurso para diseñar las puertas del Baptisterio de Florencia (Las Puertas del Paraíso)?",
+    "answer": "Lorenzo Ghiberti"
+  },
+  {
+    "category": "Economía",
+    "question": "¿Qué teoría económica sugiere que reducir los impuestos a los ricos eventualmente beneficiará a todos ('goteo')?",
+    "answer": "Trickle-down economics (Economía de goteo)"
+  },
+  {
+    "category": "Astronomía",
+    "question": "¿Qué es un púlsar?",
+    "answer": "Una estrella de neutrones que emite radiación periódica"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿De qué flor se obtiene la especia más cara del mundo, el azafrán?",
+    "answer": "Crocus sativus (Flor del azafrán)"
+  },
+  {
+    "category": "Lingüística",
+    "question": "¿Qué hipótesis sugiere que la estructura de una lengua afecta la cosmovisión de sus hablantes (relatividad lingüística)?",
+    "answer": "Hipótesis de Sapir-Whorf"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Qué problema matemático del milenio trata sobre la distribución de los números primos?",
+    "answer": "La Hipótesis de Riemann"
+  },
+  {
+    "category": "Historia de Asia",
+    "question": "¿Qué rebelión en China (1850-1864) fue uno de los conflictos más sangrientos de la historia humana?",
+    "answer": "Rebelión Taiping"
+  },
+  {
+    "category": "Cine Clásico",
+    "question": "¿Qué película de 1925 dirigida por Sergei Eisenstein es famosa por la escena de la escalera de Odesa?",
+    "answer": "El acorazado Potemkin"
+  },
+  {
+    "category": "Botánica",
+    "question": "¿Qué nombre reciben las plantas que pierden sus hojas estacionalmente?",
+    "answer": "Caducifolias"
+  },
+  {
+    "category": "Geografía Física",
+    "question": "¿Cómo se llama la línea imaginaria que separa las cuencas hidrográficas que fluyen al Pacífico de las que fluyen al Atlántico en América?",
+    "answer": "Divisoria continental"
+  },
+  {
+    "category": "Psicoanálisis",
+    "question": "¿Qué término usó Carl Jung para describir los patrones universales e imágenes del inconsciente colectivo?",
+    "answer": "Arquetipos"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué mujer fue fundamental para el desarrollo del código de abordo de la misión Apolo 11?",
+    "answer": "Margaret Hamilton"
+  },
+  {
+    "category": "Derecho Internacional",
+    "question": "¿En qué ciudad se celebraron los juicios contra los líderes nazis después de la Segunda Guerra Mundial?",
+    "answer": "Nüremberg"
+  },
+  {
+    "category": "Química Orgánica",
+    "question": "¿Qué estructura hexagonal con dobles enlaces alternados es la base de los compuestos aromáticos?",
+    "answer": "Anillo de benceno"
+  },
+  {
+    "category": "Literatura Rusa",
+    "question": "¿Quién escribió 'El Maestro y Margarita'?",
+    "answer": "Mijaíl Bulgákov"
+  },
+  {
+    "category": "Antropología",
+    "question": "¿Qué antropólogo estructuralista escribió 'Tristes Trópicos'?",
+    "answer": "Claude Lévi-Strauss"
+  },
+  {
+    "category": "Música Clásica",
+    "question": "¿Qué compositor ruso estrenó 'La consagración de la primavera', causando disturbios en París en 1913?",
+    "answer": "Igor Stravinsky"
+  },
+  {
+    "category": "Historia de África",
+    "question": "¿Cómo se llamaba el reino que existió en el actual Zimbabue, famoso por sus grandes murallas de piedra sin mortero?",
+    "answer": "Gran Zimbabue"
+  },
+  {
+    "category": "Informática",
+    "question": "¿Qué prueba propuesta en 1950 evalúa la capacidad de una máquina para exhibir un comportamiento inteligente indistinguible del humano?",
+    "answer": "Test de Turing"
+  },
+  {
+    "category": "Religión",
+    "question": "¿Qué rama mística del Islam busca la verdad divina y el amor a través de la experiencia personal directa de Dios?",
+    "answer": "Sufismo"
+  },
+  {
+    "category": "Pintura",
+    "question": "¿Qué técnica inventada por Seurat utiliza pequeños puntos de color puro que se mezclan en el ojo del espectador?",
+    "answer": "Puntillismo"
+  },
+  {
+    "category": "Geología",
+    "question": "¿Qué escala mide la energía total liberada por un terremoto (reemplazando a menudo a la de Richter)?",
+    "answer": "Escala sismológica de magnitud de momento (Mw)"
+  },
+  {
+    "category": "Teatro",
+    "question": "¿Qué dramaturgo noruego es considerado el padre del realismo moderno con obras como 'Casa de muñecas'?",
+    "answer": "Henrik Ibsen"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué partícula mediadora es responsable de la interacción fuerte que mantiene unido el núcleo atómico?",
+    "answer": "Gluón"
+  },
+  {
+    "category": "Historia Medieval",
+    "question": "¿Qué orden militar católica fue disuelta violentamente el viernes 13 de octubre de 1307?",
+    "answer": "Los Templarios"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Qué poeta portugués escribió bajo múltiples heterónimos como Alberto Caeiro y Ricardo Reis?",
+    "answer": "Fernando Pessoa"
+  },
+  {
+    "category": "Ajedrez",
+    "question": "¿Qué nombre recibe el movimiento especial donde el rey se mueve dos casillas y la torre salta sobre él?",
+    "answer": "Enroque"
+  },
+  {
+    "category": "Economía",
+    "question": "¿Qué acuerdo de 1944 estableció el dólar estadounidense como moneda de reserva mundial?",
+    "answer": "Acuerdos de Bretton Woods"
+  },
+  {
+    "category": "Zoología",
+    "question": "¿Cuál es el único mamífero capaz de volar verdaderamente (no solo planear)?",
     "answer": "Murciélago"
   },
   {
-    "category": "Lengua",
-    "question": "¿Antónimo de 'Falso'?",
-    "answer": "Verdadero"
+    "category": "Filosofía",
+    "question": "¿Qué paradoja de Zenón argumenta que Aquiles nunca podrá alcanzar a la tortuga?",
+    "answer": "Paradoja de Aquiles y la tortuga"
+  },
+  {
+    "category": "Ballet",
+    "question": "¿Quién compuso la música para 'El lago de los cisnes'?",
+    "answer": "Piotr Ilich Chaikovski"
+  },
+  {
+    "category": "Sociología",
+    "question": "¿Qué sociólogo acuñó el término 'modernidad líquida'?",
+    "answer": "Zygmunt Bauman"
+  },
+  {
+    "category": "Historia de América",
+    "question": "¿Cómo se llamaba el imperio indígena que dominaba los Andes centrales antes de la llegada de Pizarro?",
+    "answer": "Tahuantinsuyo (Imperio Inca)"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué elemento fue aislado por Marie y Pierre Curie a partir de la pechblenda?",
+    "answer": "Radio (o Polonio)"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué director sueco es famoso por jugar al ajedrez con la Muerte en 'El séptimo sello'?",
+    "answer": "Ingmar Bergman"
+  },
+  {
+    "category": "Náutica",
+    "question": "¿Qué instrumento se utilizaba antiguamente para medir la altura de los astros y determinar la latitud?",
+    "answer": "Astrolabio (o Sextante)"
+  },
+  {
+    "category": "Literatura Latinoamericana",
+    "question": "¿Qué novela de Juan Rulfo tiene lugar en el pueblo fantasma de Comala?",
+    "answer": "Pedro Páramo"
+  },
+  {
+    "category": "Medicina",
+    "question": "¿Quién descubrió la penicilina por accidente en 1928?",
+    "answer": "Alexander Fleming"
+  },
+  {
+    "category": "Geografía Política",
+    "question": "¿Cuál es el país más joven del mundo (reconocido por la ONU en 2011)?",
+    "answer": "Sudán del Sur"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué ley de la termodinámica establece que la entropía de un sistema aislado siempre aumenta?",
+    "answer": "Segunda ley de la termodinámica"
+  },
+  {
+    "category": "Escultura",
+    "question": "¿Qué escultor rumano es considerado el pionero de la escultura moderna (autor de 'El beso' abstracto)?",
+    "answer": "Constantin Brâncuși"
+  },
+  {
+    "category": "Historia Militar",
+    "question": "¿Qué general cartaginés derrotó a los romanos en la batalla de Cannas mediante una maniobra de pinza perfecta?",
+    "answer": "Aníbal"
+  },
+  {
+    "category": "Psicología",
+    "question": "¿Qué experimento de 1971 tuvo que ser cancelado por la brutalidad de los participantes (guardias y prisioneros)?",
+    "answer": "Experimento de la cárcel de Stanford"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué invento de Johannes Gutenberg revolucionó la difusión del conocimiento en el siglo XV?",
+    "answer": "La imprenta de tipos móviles"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'En el camino' (On the Road), obra cumbre de la Generación Beat?",
+    "answer": "Jack Kerouac"
+  },
+  {
+    "category": "Ecología",
+    "question": "¿Qué término describe el papel funcional que desempeña una especie en su ecosistema?",
+    "answer": "Nicho ecológico"
+  },
+  {
+    "category": "Mitología Egipcia",
+    "question": "¿Qué diosa, representada con cabeza de leona, era la deidad de la guerra y la curación?",
+    "answer": "Sejmet"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué instrumento de cuerda frotada es ligeramente más grande que el violín y se afina una quinta más grave?",
+    "answer": "Viola"
+  },
+  {
+    "category": "Historia de España",
+    "question": "¿Qué monarca construyó el Monasterio de El Escorial?",
+    "answer": "Felipe II"
+  },
+  {
+    "category": "Astronomía",
+    "question": "¿Qué nube hipotética de cometas se cree que rodea el sistema solar en sus límites exteriores?",
+    "answer": "Nube de Oort"
+  },
+  {
+    "category": "Derecho",
+    "question": "¿Qué significa la expresión latina 'In dubio pro reo'?",
+    "answer": "En caso de duda, a favor del acusado"
+  },
+  {
+    "category": "Arquitectura",
+    "question": "¿Qué arquitecto diseñó el Museo Guggenheim de Nueva York (espiral)?",
+    "answer": "Frank Lloyd Wright"
+  },
+  {
+    "category": "Paleontología",
+    "question": "¿En qué periodo geológico se extinguieron los dinosaurios no aviares (hace 66 millones de años)?",
+    "answer": "Cretácico (Final del)"
+  },
+  {
+    "category": "Filosofía",
+    "question": "¿Qué filósofo francés es conocido por su apuesta sobre la existencia de Dios (Apuesta de...)?",
+    "answer": "Blaise Pascal"
+  },
+  {
+    "category": "Danza",
+    "question": "¿Qué bailarina estadounidense es considerada la madre de la danza moderna?",
+    "answer": "Isadora Duncan"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué nombre recibe la temperatura a la cual la presión de vapor de un líquido iguala a la presión atmosférica?",
+    "answer": "Punto de ebullición"
+  },
+  {
+    "category": "Literatura Clásica",
+    "question": "¿Quién es el autor de las comedias griegas 'Lisístrata' y 'Las nubes'?",
+    "answer": "Aristófanes"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué estrecho separa la isla de Tierra del Fuego del continente sudamericano?",
+    "answer": "Estrecho de Magallanes"
+  },
+  {
+    "category": "Historia Contemporánea",
+    "question": "¿Qué crisis de 1962 puso al mundo al borde de la guerra nuclear?",
+    "answer": "Crisis de los misiles en Cuba"
+  },
+  {
+    "category": "Cómic / Novela Gráfica",
+    "question": "¿Quién escribió la aclamada novela gráfica 'Watchmen'?",
+    "answer": "Alan Moore"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Qué parte del cerebro es responsable de la coordinación motora y el equilibrio?",
+    "answer": "Cerebelo"
+  },
+  {
+    "category": "Lingüística",
+    "question": "¿Qué es un fonema?",
+    "answer": "La unidad mínima de sonido que distingue significado"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué movimiento cinematográfico danés creado por Lars von Trier y Thomas Vinterberg buscaba purificar el cine (1995)?",
+    "answer": "Dogma 95"
+  },
+  {
+    "category": "Economía",
+    "question": "¿Qué es la estanflación?",
+    "answer": "Estancamiento económico combinado con alta inflación"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué pintor español del Barroco es conocido por obras como 'La Inmaculada Concepción' y niños comiendo fruta?",
+    "answer": "Bartolomé Esteban Murillo"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Qué son los priones (causantes de la enfermedad de las vacas locas)?",
+    "answer": "Proteínas mal plegadas infecciosas"
+  },
+  {
+    "category": "Política",
+    "question": "¿Qué tratado fundó la Unión Europea en 1993?",
+    "answer": "Tratado de Maastricht"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Qué obra de Mary Shelley se considera la primera novela de ciencia ficción?",
+    "answer": "Frankenstein"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué rey babilonio construyó los Jardines Colgantes para su esposa?",
+    "answer": "Nabucodonosor II"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué efecto describe el cambio de frecuencia de una onda para un observador que se mueve respecto a la fuente?",
+    "answer": "Efecto Doppler"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué nombre recibe el supercontinente que existió hace 300 millones de años?",
+    "answer": "Pangea"
+  },
+  {
+    "category": "Religión",
+    "question": "¿En qué idioma fueron escritos originalmente los Vedas del hinduismo?",
+    "answer": "Sánscrito"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Qué matemático desarrolló la teoría de juegos y la arquitectura de computadoras moderna?",
+    "answer": "John von Neumann"
+  },
+  {
+    "category": "Pintura",
+    "question": "¿Qué artista mexicana surrealista (aunque ella lo negaba) pintó 'Las dos Fridas'?",
+    "answer": "Frida Kahlo"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué material bidimensional de carbono es conocido por su increíble resistencia y conductividad?",
+    "answer": "Grafeno"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'Las flores del mal'?",
+    "answer": "Charles Baudelaire"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue la primera mujer en gobernar Egipto como faraón con plenos poderes (dinastía XVIII)?",
+    "answer": "Hatshepsut"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué compositor minimalista escribió la ópera 'Einstein on the Beach'?",
+    "answer": "Philip Glass"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Cómo se llama la técnica de cocción al vacío a baja temperatura por largos periodos?",
+    "answer": "Sous-vide"
+  },
+  {
+    "category": "Astronomía",
+    "question": "¿Cuál es la galaxia espiral más cercana a la Vía Láctea?",
+    "answer": "Andrómeda"
+  },
+  {
+    "category": "Filosofía",
+    "question": "¿Qué filósofo del siglo XVII defendió el panteísmo (Dios y la naturaleza son lo mismo) en su 'Ética'?",
+    "answer": "Baruch Spinoza"
+  },
+  {
+    "category": "Medicina",
+    "question": "¿Qué enfermedad erradicada en 1980 fue causada por el virus Variola?",
+    "answer": "Viruela"
   },
   {
     "category": "Deportes",
-    "question": "¿Tenista español famoso?",
-    "answer": "Rafa Nadal"
+    "question": "¿Quién es el único boxeador invicto que se retiró con un récord de 49-0 (luego 50-0)?",
+    "answer": "Floyd Mayweather Jr."
   },
   {
-    "category": "Videojuegos",
-    "question": "¿Fontanero de Nintendo?",
-    "answer": "Mario"
+    "category": "Cultura Pop",
+    "question": "¿Qué videojuego popularizó el género 'Battle Royale' en 2017?",
+    "answer": "Fortnite (o PUBG)"
   },
   {
-    "category": "Cocina",
-    "question": "¿Ingrediente principal del Guacamole?",
-    "answer": "Aguacate"
+    "category": "Historia",
+    "question": "¿Qué explorador veneciano viajó a la corte de Kublai Khan?",
+    "answer": "Marco Polo"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Qué escritor checo popularizó la palabra 'robot' en su obra R.U.R.?",
+    "answer": "Karel Čapek"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué nombre reciben los elementos del Grupo 18 que no reaccionan fácilmente?",
+    "answer": "Gases Nobles"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué lago es el cuerpo de agua más salado del mundo (o uno de los más, en la Antártida)?",
+    "answer": "Estanque de Don Juan (o Mar Muerto como respuesta común)"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué movimiento artístico lideró Henri Matisse, caracterizado por el uso salvaje del color?",
+    "answer": "Fauvismo"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Cómo se llama el proceso por el cual las células se 'comen' a sí mismas para reciclar componentes?",
+    "answer": "Autofagia"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué tratado puso fin a la Guerra de Independencia de México?",
+    "answer": "Tratados de Córdoba"
   }
 ]

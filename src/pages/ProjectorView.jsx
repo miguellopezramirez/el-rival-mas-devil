@@ -14,7 +14,7 @@ const ProjectorView = () => {
     timer,
     question,
     roundNumber,
-    players, currentPlayer, isQuestionVisible
+    players, currentPlayer, isQuestionVisible, totalGameMoney
   } = useGame();
 
   // Helper variable to check if game has started (active round)
@@ -49,7 +49,7 @@ const ProjectorView = () => {
 
   if (gameStatus === 'SUMMARY') {
     return (
-      <div className="pointer-events-none [&_button]:hidden">
+      <div className="h-screen w-screen overflow-y-auto [&_button]:hidden bg-[#000510] custom-scrollbar">
         <RoundSummaryScreen isProjector={true} />
       </div>
     );
@@ -82,21 +82,13 @@ const ProjectorView = () => {
       </div>
 
       {/* --- MAIN COLUMNS --- */}
-      <div className="w-full h-full flex flex-col items-center pt-20 pb-4">
+      <div className="w-full h-full flex flex-col items-center pt-12 pb-4">
 
         {/* Upper Area: Game Elements */}
-        <div className="flex items-center justify-between w-full px-16 flex-1 gap-10">
+        <div className="flex items-center justify-between w-full px-4 flex-1 gap-4">
           {/* Left: Players (Bars) */}
-          <div className="w-72 h-full flex flex-col items-center overflow-hidden">
-            {/* Total Pot for Round (Moved to Top for visibility) */}
-            <div className="mb-8 flex flex-col items-center flex-shrink-0 pt-10">
-              <div className="game-puck w-40 h-10">
-                <div className="game-puck-body bg-black"></div>
-                <div className="game-puck-top bg-black border-gray-600 z-20">
-                  <span className="text-white font-bold text-sm relative z-30">${bankedMoney.toLocaleString()} TOTAL</span>
-                </div>
-              </div>
-            </div>
+          <div className="w-60 h-full flex flex-col items-center overflow-hidden">
+            {/* Total Pot removed (redundant with MoneyChain Bank) */}
 
             <div className="w-full flex-1 overflow-y-auto scroll-smooth no-scrollbar flex justify-center">
               <PlayerList />
@@ -104,18 +96,34 @@ const ProjectorView = () => {
           </div>
 
           {/* Center: Blue Tank (Questions) */}
-          <div className="flex-1 h-3/5 flex items-center justify-center relative">
-            <Jumbotron question={question} showAnswer={false} showQuestion={isQuestionVisible} />
-            {/* Note: I need to access isQuestionVisible from context. ProjectorView already uses useGame() */}
+          <div className="flex-1 h-full flex items-center justify-center relative">
+            <Jumbotron question={question} showAnswer={false} showQuestion={isQuestionVisible} className="text-6xl" />
+            {/* Note: I need to check if Jumbotron accepts className or I need to edit it. 
+               I will edit Jumbotron separately to support larger text or handle it here if it was just wrapping.
+               The Jumbotron component itself has strictly defined classes. I'll depend on editing Jumbotron next.
+               For now, I'm removing h-3/5 and reducing margins.
+            */}
           </div>
 
           {/* Right: Money Chain (Pucks) */}
-          <div className="w-64 h-full flex items-center justify-center">
-            <MoneyChain
-              chain={moneyChain}
-              currentLevel={currentLevel}
-              bankedMoney={bankedMoney}
-            />
+          <div className="w-64 h-full flex flex-col items-center justify-center">
+
+            <div className="flex-1 flex items-center justify-center">
+              <MoneyChain
+                chain={moneyChain}
+                currentLevel={currentLevel}
+                bankedMoney={bankedMoney}
+              />
+            </div>
+
+            {/* GRAND TOTAL (Bottom) */}
+            <div className="mb-8 bg-black/80 p-4 rounded-xl border-2 border-game-gold shadow-[0_0_20px_rgba(255,215,0,0.5)]">
+              <div className="text-game-gold font-black text-3xl tracking-widest text-center stroke-black drop-shadow-md">
+                ${totalGameMoney.toLocaleString()}
+              </div>
+              <div className="text-white text-xs uppercase tracking-[0.2em] text-center font-bold">Total Acumulado</div>
+            </div>
+
           </div>
         </div>
 

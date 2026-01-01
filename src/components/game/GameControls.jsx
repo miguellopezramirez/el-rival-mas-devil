@@ -10,7 +10,8 @@ const GameControls = () => {
     toggleTimer,
     resetTimer,
     endRound,
-    isTimerRunning
+    isTimerRunning,
+    nextQuestion
   } = useGame();
 
   return (
@@ -44,8 +45,16 @@ const GameControls = () => {
         </div>
       </div>
 
-      {/* Main Game Actions */}
       <div className="flex items-center gap-4">
+        {/* Skip Question Button */}
+        <button
+          onClick={nextQuestion}
+          className="w-12 h-12 rounded-full bg-slate-700 border border-slate-500 shadow-md active:scale-95 transition-transform flex items-center justify-center group mr-2"
+          title="Pasar Pregunta (Sin Afectar)"
+        >
+          <span className="text-gray-300 font-bold text-[8px] uppercase tracking-wider text-center group-hover:text-white">Pasar</span>
+        </button>
+
         <button
           onClick={handleIncorrect}
           className="w-16 h-16 rounded-full bg-gradient-to-br from-red-600 to-red-900 border-2 border-red-400 shadow-[0_0_15px_rgba(255,0,0,0.5)] active:scale-95 transition-transform flex items-center justify-center group"

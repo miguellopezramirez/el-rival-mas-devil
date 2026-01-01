@@ -1,27 +1,497 @@
 [
   {
-    "category": "Astronomía",
-    "question": "¿Planeta Rojo?",
-    "answer": "Marte"
+    "category": "Historia Bélica",
+    "question": "¿Cuál fue la guerra más corta registrada en la historia (38 a 45 minutos)?",
+    "answer": "Guerra Anglo-Zanzibariana"
   },
   {
-    "category": "Cine",
-    "question": "¿Villano de Star Wars?",
-    "answer": "Darth Vader"
+    "category": "Química",
+    "question": "¿Cuál es el elemento más electronegativo de la tabla periódica?",
+    "answer": "Flúor"
   },
   {
-    "category": "Historia",
-    "question": "¿Moneda de Reino Unido?",
-    "answer": "Libra Esterlina"
+    "category": "Religión",
+    "question": "¿Cómo se llamó el cisma que dividió al cristianismo en 1054 entre Roma y Constantinopla?",
+    "answer": "El Gran Cisma de Oriente"
   },
   {
-    "category": "Biología",
-    "question": "¿Hueso más largo?",
-    "answer": "Fémur"
+    "category": "Tecnología",
+    "question": "¿Quién es considerada la primera programadora de la historia?",
+    "answer": "Ada Lovelace"
+  },
+  {
+    "category": "Paz y Diplomacia",
+    "question": "¿Qué tratado de paz sentó las bases del Estado-nación moderno en 1648?",
+    "answer": "Paz de Westfalia"
   },
   {
     "category": "Arte",
-    "question": "¿Pintó la Mona Lisa?",
-    "answer": "Da Vinci"
+    "question": "¿Qué pintor barroco es famoso por su uso extremo del claroscuro (tenebrismo), como en 'La vocación de San Mateo'?",
+    "answer": "Caravaggio"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Cuál es la novela más larga de la historia (por recuento de palabras y caracteres) escrita por Marcel Proust?",
+    "answer": "En busca del tiempo perdido"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el único país de América del Sur donde el idioma oficial es el neerlandés?",
+    "answer": "Surinam"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué principio físico establece que es imposible conocer simultáneamente la posición y el momento exactos de una partícula?",
+    "answer": "Principio de Incertidumbre de Heisenberg"
+  },
+  {
+    "category": "México",
+    "question": "¿Quién fue el primer Virrey de la Nueva España?",
+    "answer": "Antonio de Mendoza y Pacheco"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué compositor del periodo romántico escribió los 'Nocturnos' para piano más célebres?",
+    "answer": "Frédéric Chopin"
+  },
+  {
+    "category": "Filosofía",
+    "question": "¿Qué filósofo alemán escribió 'Así habló Zaratustra'?",
+    "answer": "Friedrich Nietzsche"
+  },
+  {
+    "category": "Tabla Periódica",
+    "question": "¿Qué elemento químico tiene el punto de fusión más alto de todos los metales?",
+    "answer": "Tungsteno (Wolframio)"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Cómo se llamaba la operación militar alemana para invadir la Unión Soviética en la Segunda Guerra Mundial?",
+    "answer": "Operación Barbarroja"
+  },
+  {
+    "category": "Iglesia",
+    "question": "¿Qué concilio ecuménico (1545-1563) se convocó como respuesta a la Reforma Protestante?",
+    "answer": "Concilio de Trento"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa el acrónimo 'GPU' en informática?",
+    "answer": "Graphics Processing Unit"
+  },
+  {
+    "category": "Astronomía",
+    "question": "¿Cómo se llama el límite teórico alrededor de un agujero negro del cual nada puede escapar?",
+    "answer": "Horizonte de sucesos"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué película muda de 1927 dirigida por Fritz Lang es pionera en el género de ciencia ficción?",
+    "answer": "Metrópolis"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué dos países son los únicos en el mundo declarados 'doblemente aislados' (rodeados por países sin salida al mar)?",
+    "answer": "Liechtenstein y Uzbekistán"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Cuál es el nombre de la proteína encargada de transportar oxígeno en la sangre de los vertebrados?",
+    "answer": "Hemoglobina"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué civilización antigua desarrolló la escritura cuneiforme?",
+    "answer": "Sumeria"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió la novela distópica 'Un mundo feliz'?",
+    "answer": "Aldous Huxley"
+  },
+  {
+    "category": "México",
+    "question": "¿Qué documento proclamó Emiliano Zapata en 1911 exigiendo la restitución de tierras?",
+    "answer": "El Plan de Ayala"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué gas noble es el segundo elemento más abundante en el universo, pero raro en la Tierra?",
+    "answer": "Helio"
+  },
+  {
+    "category": "Guerra",
+    "question": "¿En qué batalla naval de 1805 la flota británica derrotó a la armada franco-española?",
+    "answer": "Batalla de Trafalgar"
+  },
+  {
+    "category": "Paz",
+    "question": "¿Quién fue la primera mujer en ganar el Premio Nobel de la Paz (1905)?",
+    "answer": "Bertha von Suttner"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué ley empírica predice que el número de transistores en un microchip se duplica aproximadamente cada dos años?",
+    "answer": "Ley de Moore"
+  },
+  {
+    "category": "Iglesia",
+    "question": "¿Quién tradujo la Biblia al latín, versión conocida como la 'Vulgata'?",
+    "answer": "San Jerónimo"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Quién esculpió 'El Éxtasis de Santa Teresa'?",
+    "answer": "Gian Lorenzo Bernini"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Cómo se llama el problema matemático irresoluble de cuadrar qué figura geométrica usando solo regla y compás?",
+    "answer": "El círculo"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el lago más profundo del mundo?",
+    "answer": "Lago Baikal"
+  },
+  {
+    "category": "Cultura",
+    "question": "¿Cuál es el idioma más hablado del mundo (por número total de hablantes, nativos y no nativos)?",
+    "answer": "Inglés"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué dinastía china construyó la mayor parte de la Gran Muralla tal como la vemos hoy?",
+    "answer": "Dinastía Ming"
+  },
+  {
+    "category": "Tabla Periódica",
+    "question": "¿Qué elemento tiene el símbolo 'Sb'?",
+    "answer": "Antimonio"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué fuerza fundamental es responsable de la desintegración radiactiva?",
+    "answer": "Fuerza nuclear débil"
+  },
+  {
+    "category": "Mitología",
+    "question": "¿Cómo se llama el árbol de la vida en la mitología nórdica?",
+    "answer": "Yggdrasil"
+  },
+  {
+    "category": "México",
+    "question": "¿En qué año se promulgó la actual Constitución Política de los Estados Unidos Mexicanos?",
+    "answer": "1917"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Cómo se llama la red precursora de Internet creada por el Departamento de Defensa de EE.UU.?",
+    "answer": "ARPANET"
+  },
+  {
+    "category": "Guerra",
+    "question": "¿Qué general cartaginés cruzó los Alpes con elefantes para atacar Roma?",
+    "answer": "Aníbal Barca"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Autor ruso que escribió 'Crimen y Castigo'?",
+    "answer": "Fiódor Dostoyevski"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Cuál es la única parte del cuerpo humano que no tiene suministro de sangre (se oxigena directamente del aire)?",
+    "answer": "La córnea"
+  },
+  {
+    "category": "Iglesia",
+    "question": "¿Cómo se llama el proceso para elegir a un nuevo Papa?",
+    "answer": "Cónclave"
+  },
+  {
+    "category": "Química",
+    "question": "¿Cuál es el único isótopo natural del hidrógeno que tiene un neutrón?",
+    "answer": "Deuterio"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué estrecho separa la isla de Gran Bretaña de la Europa continental?",
+    "answer": "Canal de la Mancha"
+  },
+  {
+    "category": "Paz",
+    "question": "¿Qué organización internacional fue la predecesora fallida de las Naciones Unidas?",
+    "answer": "Sociedad de Naciones (o Liga de las Naciones)"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué director es conocido como el 'Maestro del Suspense'?",
+    "answer": "Alfred Hitchcock"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el último Zar de la dinastía Romanov antes de Nicolás II (su padre)?",
+    "answer": "Alejandro III"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué instrumento toca el músico Yo-Yo Ma?",
+    "answer": "Violonchelo"
+  },
+  {
+    "category": "México",
+    "question": "¿Qué presidente mexicano nacionalizó la industria petrolera en 1938?",
+    "answer": "Lázaro Cárdenas"
+  },
+  {
+    "category": "Tabla Periódica",
+    "question": "¿Qué familia de elementos ocupa el Grupo 17 de la tabla periódica?",
+    "answer": "Halógenos"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué sistema operativo de código abierto fue creado por Linus Torvalds en 1991?",
+    "answer": "Linux"
+  },
+  {
+    "category": "Guerra",
+    "question": "¿Nombre del avión desde el cual se lanzó la primera bomba atómica sobre Hiroshima?",
+    "answer": "Enola Gay"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué artista pintó 'Las Meninas'?",
+    "answer": "Diego Velázquez"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué nombre recibe el cambio de estado de sólido a gas sin pasar por líquido?",
+    "answer": "Sublimación"
+  },
+  {
+    "category": "Iglesia",
+    "question": "¿En qué ciudad residieron los Papas durante el periodo conocido como el 'Papado de Aviñón'?",
+    "answer": "Aviñón (Francia)"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió el poema épico 'El Paraíso Perdido'?",
+    "answer": "John Milton"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Kazajistán?",
+    "answer": "Astaná"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué código de leyes babilónico es uno de los conjuntos de leyes más antiguos y mejor conservados?",
+    "answer": "Código de Hammurabi"
+  },
+  {
+    "category": "Economía",
+    "question": "¿Quién es el autor de 'La Riqueza de las Naciones'?",
+    "answer": "Adam Smith"
+  },
+  {
+    "category": "México",
+    "question": "¿Cómo se llama la zona arqueológica maya ubicada en la selva de Campeche, Patrimonio Mixto de la Humanidad?",
+    "answer": "Calakmul"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué ácido se encuentra en el estómago humano?",
+    "answer": "Ácido clorhídrico"
+  },
+  {
+    "category": "Paz",
+    "question": "¿Líder sudafricano que compartió el Nobel de la Paz con Nelson Mandela en 1993?",
+    "answer": "F.W. de Klerk"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Bajo qué seudónimo se publicó el libro blanco (whitepaper) de Bitcoin?",
+    "answer": "Satoshi Nakamoto"
+  },
+  {
+    "category": "Guerra",
+    "question": "¿Qué batalla de 1813 es conocida como la 'Batalla de las Naciones'?",
+    "answer": "Batalla de Leipzig"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Qué científico propuso la estructura de doble hélice del ADN junto con Francis Crick?",
+    "answer": "James Watson"
+  },
+  {
+    "category": "Filosofía",
+    "question": "¿A qué corriente filosófica pertenece Jean-Paul Sartre?",
+    "answer": "Existencialismo"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué río atraviesa la ciudad de Bagdad?",
+    "answer": "Río Tigris"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién ganó el Oscar a Mejor Director por 'El laberinto del fauno' (No, fue por 'La forma del agua', pero ¿quién es el director)?",
+    "answer": "Guillermo del Toro"
+  },
+  {
+    "category": "Tabla Periódica",
+    "question": "¿Cuál es el elemento natural más denso (pesado por volumen)?",
+    "answer": "Osmio"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué emperatriz rusa era conocida como 'La Grande' y modernizó Rusia en el siglo XVIII?",
+    "answer": "Catalina II"
+  },
+  {
+    "category": "Iglesia",
+    "question": "¿Quién fundó la Compañía de Jesús (Jesuitas)?",
+    "answer": "San Ignacio de Loyola"
+  },
+  {
+    "category": "México",
+    "question": "¿Qué evento trágico ocurrió el 2 de octubre de 1968 en Tlatelolco?",
+    "answer": "La Matanza de Tlatelolco"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Cuál es la obra cumbre de James Joyce que transcurre en un solo día en Dublín?",
+    "answer": "Ulises"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué compañía fabricó el primer microprocesador comercial (el 4004)?",
+    "answer": "Intel"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué término describe la cantidad de desorden o aleatoriedad en un sistema termodinámico?",
+    "answer": "Entropía"
+  },
+  {
+    "category": "Guerra",
+    "question": "¿Cómo se conoce a la línea defensiva construida por Francia en la frontera con Alemania antes de la II Guerra Mundial?",
+    "answer": "Línea Maginot"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la montaña más alta de África?",
+    "answer": "Monte Kilimanjaro"
+  },
+  {
+    "category": "Arte",
+    "question": "¿A qué movimiento artístico pertenece Salvador Dalí?",
+    "answer": "Surrealismo"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué año ocurrió el desastre nuclear de Chernóbil?",
+    "answer": "1986"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué ópera de Wagner dura aproximadamente 15 horas en total (ciclo de 4 óperas)?",
+    "answer": "El anillo del nibelungo"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué es el 'agua regia' capaz de disolver?",
+    "answer": "Oro y Platino"
+  },
+  {
+    "category": "Iglesia",
+    "question": "¿Qué dogma mariano fue definido por el Papa Pío IX en 1854?",
+    "answer": "La Inmaculada Concepción"
+  },
+  {
+    "category": "Paz",
+    "question": "¿Qué símbolo de la paz fue diseñado originalmente para la campaña de desarme nuclear británica (CND)?",
+    "answer": "El símbolo de la paz (círculo con líneas)"
+  },
+  {
+    "category": "México",
+    "question": "¿Quién fue la musa del cine de oro mexicano conocida como 'La Doña'?",
+    "answer": "María Félix"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa 'URL'?",
+    "answer": "Uniform Resource Locator"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'Cien años de soledad'?",
+    "answer": "Gabriel García Márquez"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué país tiene la mayor cantidad de islas en el mundo?",
+    "answer": "Suecia"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué partícula subatómica es conocida como la 'partícula de Dios'?",
+    "answer": "Bosón de Higgs"
+  },
+  {
+    "category": "Guerra",
+    "question": "¿Quién era el líder de las fuerzas confederadas en la Guerra Civil Estadounidense?",
+    "answer": "Robert E. Lee"
+  },
+  {
+    "category": "Tabla Periódica",
+    "question": "¿Cuál es el último elemento natural de la tabla periódica (número 92)?",
+    "answer": "Uranio"
+  },
+  {
+    "category": "Cultura",
+    "question": "¿Qué idioma es el más hablado en el continente africano?",
+    "answer": "Suajili (como lengua franca) o Árabe"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el primer emperador de China, famoso por su ejército de terracota?",
+    "answer": "Qin Shi Huang"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Qué matemático griego es conocido como el 'padre de la geometría'?",
+    "answer": "Euclides"
+  },
+  {
+    "category": "México",
+    "question": "¿Nombre del muralista mexicano que pintó 'La Marcha de la Humanidad'?",
+    "answer": "David Alfaro Siqueiros"
+  },
+  {
+    "category": "Iglesia",
+    "question": "¿Qué papa convocó la Primera Cruzada en el Concilio de Clermont?",
+    "answer": "Urbano II"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cómo se llama la capa de gas que rodea al Sol y es visible durante un eclipse total?",
+    "answer": "Corona solar"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué lenguaje de programación fue desarrollado por Sun Microsystems en 1995 y su mascota es Duke?",
+    "answer": "Java"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué escultor creó 'El Pensador'?",
+    "answer": "Auguste Rodin"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Qué poeta chilena fue la primera latinoamericana en ganar el Nobel de Literatura?",
+    "answer": "Gabriela Mistral"
   }
 ]

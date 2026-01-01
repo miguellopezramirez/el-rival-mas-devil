@@ -1,27 +1,492 @@
 [
   {
-    "category": "Química",
-    "question": "¿Fórmula del agua?",
-    "answer": "H2O"
+    "category": "Astronomía",
+    "question": "¿Qué nombre recibe el disco de materia supercaliente que gira alrededor de un agujero negro?",
+    "answer": "Disco de acreción"
+  },
+  {
+    "category": "Historia de Nayarit",
+    "question": "¿De qué estado se separó Nayarit para convertirse en territorio federal en 1884?",
+    "answer": "Jalisco (Cantón de Tepic)"
   },
   {
     "category": "Historia",
-    "question": "¿Primer hombre en la Luna?",
-    "answer": "Neil Armstrong"
+    "question": "¿Qué guerra se libró entre 1337 y 1453, a pesar de su nombre inexacto?",
+    "answer": "Guerra de los Cien Años"
   },
   {
-    "category": "Entretenimiento",
-    "question": "¿Plataforma de videos más famosa?",
-    "answer": "YouTube"
+    "category": "Literatura",
+    "question": "¿Quién escribió el poema épico romano 'La Eneida'?",
+    "answer": "Virgilio"
+  },
+  {
+    "category": "Gastronomía de Nayarit",
+    "question": "¿Qué dulce típico de Nayarit se elabora con plátano deshidratado?",
+    "answer": "Pan de plátano (o Plátano pancle)"
+  },
+  {
+    "category": "Química",
+    "question": "¿Cuál es el elemento más abundante en la corteza terrestre?",
+    "answer": "Oxígeno"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué compositor austríaco es conocido como el 'Padre de la Sinfonía'?",
+    "answer": "Joseph Haydn"
+  },
+  {
+    "category": "Turismo de Nayarit",
+    "question": "¿Qué destino de lujo en Nayarit es conocido por tener una playa escondida dentro de un cráter (Playa del Amor)?",
+    "answer": "Islas Marietas (Punta Mita)"
   },
   {
     "category": "Geografía",
-    "question": "¿Continente de Egipto?",
-    "answer": "África"
+    "question": "¿Cuál es el país más grande de África por superficie (después de la división de Sudán)?",
+    "answer": "Argelia"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Cuál es el músculo más largo del cuerpo humano?",
+    "answer": "Sartorio"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Quién pintó 'La Escuela de Atenas'?",
+    "answer": "Rafael Sanzio"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa la sigla 'Wi-Fi' (aunque popularmente se cree que es Wireless Fidelity, técnicamente no significa nada, pero ¿cuál es la respuesta aceptada comúnmente)?",
+    "answer": "Wireless Fidelity"
+  },
+  {
+    "category": "Mitología",
+    "question": "¿Quién es el dios nórdico del trueno?",
+    "answer": "Thor"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué año se firmó la Declaración Universal de los Derechos Humanos?",
+    "answer": "1948"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Cómo se llaman los organismos que producen su propio alimento?",
+    "answer": "Autótrofos"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué deporte se utiliza una piedra de granito y escobas sobre hielo?",
+    "answer": "Curling"
+  },
+  {
+    "category": "Filosofía",
+    "question": "¿Qué filósofo es autor de 'El mito de la caverna'?",
+    "answer": "Platón"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué partícula teórica viaja más rápido que la luz?",
+    "answer": "Taquión"
   },
   {
     "category": "Cine",
-    "question": "¿Qué juguete es Woody?",
-    "answer": "Un vaquero"
+    "question": "¿Qué película ganó 11 premios Oscar en 1959?",
+    "answer": "Ben-Hur"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué mar se encuentra entre Arabia Saudita y África?",
+    "answer": "Mar Rojo"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Autor de 'Las aventuras de Huckleberry Finn'?",
+    "answer": "Mark Twain"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué gas se libera durante la fotosíntesis?",
+    "answer": "Oxígeno"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el primer presidente de los Estados Unidos en vivir en la Casa Blanca?",
+    "answer": "John Adams"
+  },
+  {
+    "category": "Cultura de Nayarit",
+    "question": "¿Qué salsa picante muy famosa se produce en Tepic?",
+    "answer": "Salsa Huichol"
+  },
+  {
+    "category": "México",
+    "question": "¿Qué ciudad mexicana fue fundada sobre el lago de Texcoco?",
+    "answer": "Tenochtitlán (Ciudad de México)"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Cómo se llama un triángulo que tiene todos sus lados de diferente longitud?",
+    "answer": "Escaleno"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué artista cortó parte de su propia oreja?",
+    "answer": "Vincent van Gogh"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué unidad se usa para medir la resistencia eléctrica?",
+    "answer": "Ohmio"
+  },
+  {
+    "category": "Religión",
+    "question": "¿Cuál es el libro sagrado del judaísmo?",
+    "answer": "Torá"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué empresa creó el sistema operativo Android?",
+    "answer": "Android Inc. (adquirida luego por Google)"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué tratado puso fin a la Guerra de Sucesión Española?",
+    "answer": "Tratado de Utrecht"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Finlandia?",
+    "answer": "Helsinki"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'Don Juan Tenorio'?",
+    "answer": "José Zorrilla"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Qué vitamina se produce en la piel por la exposición al sol?",
+    "answer": "Vitamina D"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién es la 'Reina del Soul'?",
+    "answer": "Aretha Franklin"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué ley afirma que 'a toda acción corresponde una reacción igual y opuesta'?",
+    "answer": "Tercera ley de Newton"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién dirigió '2001: Una odisea del espacio'?",
+    "answer": "Stanley Kubrick"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué civilización construyó Petra en Jordania?",
+    "answer": "Nabateos"
+  },
+  {
+    "category": "Química",
+    "question": "¿Cuál es el símbolo químico del Sodio?",
+    "answer": "Na"
+  },
+  {
+    "category": "Arte",
+    "question": "¿En qué ciudad se encuentra el museo del Louvre?",
+    "answer": "París"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el río más largo de Asia?",
+    "answer": "Yangtsé"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién es el autor de 'Los viajes de Gulliver'?",
+    "answer": "Jonathan Swift"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa 'PDF'?",
+    "answer": "Portable Document Format"
+  },
+  {
+    "category": "México",
+    "question": "¿En qué estado se encuentra el Cañón del Sumidero?",
+    "answer": "Chiapas"
+  },
+  {
+    "category": "Astronomía",
+    "question": "¿Cuál es el planeta más caliente del sistema solar?",
+    "answer": "Venus"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el líder de la Revolución Cubana en 1959?",
+    "answer": "Fidel Castro"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Cuál es el valor aproximado de Pi (dos decimales)?",
+    "answer": "3.14"
+  },
+  {
+    "category": "Cultura de Nayarit",
+    "question": "¿Qué festividad se celebra en Jala, Nayarit, famosa por sus elotes gigantes?",
+    "answer": "Feria del Elote"
+  },
+  {
+    "category": "Cultura",
+    "question": "¿Qué bebida alcohólica se obtiene de la fermentación de la miel?",
+    "answer": "Hidromiel"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Cuál es el hueso más largo del cuerpo humano?",
+    "answer": "Fémur"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué país tiene la mayor población del mundo (2024)?",
+    "answer": "India"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué mide un barómetro?",
+    "answer": "Presión atmosférica"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué actor interpretó a 'Jack Dawson' en Titanic?",
+    "answer": "Leonardo DiCaprio"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'La casa de los espíritus'?",
+    "answer": "Isabel Allende"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué elemento es conocido como 'el metal del diablo' por ser difícil de extraer del níquel?",
+    "answer": "Cobalto"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué explorador noruego llegó primero al Polo Sur?",
+    "answer": "Roald Amundsen"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Quién pintó 'El nacimiento de Venus'?",
+    "answer": "Sandro Botticelli"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué instrumento tiene 88 teclas estándar?",
+    "answer": "Piano"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Quién fundó SpaceX?",
+    "answer": "Elon Musk"
+  },
+  {
+    "category": "Gastronomía de Nayarit",
+    "question": "¿Cuál es el platillo de pescado más emblemático de la cocina nayarita?",
+    "answer": "Pescado Zarandeado"
+  },
+  {
+    "category": "Religión",
+    "question": "¿Cuál es el dios principal del hinduismo (creador)?",
+    "answer": "Brahma"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Polonia?",
+    "answer": "Varsovia"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué estudia la micología?",
+    "answer": "Hongos"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue la primera mujer en volar sola a través del Atlántico?",
+    "answer": "Amelia Earhart"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'El Gran Gatsby'?",
+    "answer": "F. Scott Fitzgerald"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Cuántos jugadores hay en un equipo de voleibol en la cancha?",
+    "answer": "6"
+  },
+  {
+    "category": "Filosofía",
+    "question": "¿Qué filósofo inglés escribió 'Leviatán'?",
+    "answer": "Thomas Hobbes"
+  },
+  {
+    "category": "México",
+    "question": "¿Quién fue el último tlatoani mexica?",
+    "answer": "Cuauhtémoc"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué gas se utiliza en los globos aerostáticos para elevarlos (aire caliente o...)?",
+    "answer": "Helio (o Propano para aire caliente)"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué unidad mide la potencia?",
+    "answer": "Vatio (Watt)"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la isla más grande del Mediterráneo?",
+    "answer": "Sicilia"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué ciudad fue destruida por el volcán Vesubio en el 79 d.C.?",
+    "answer": "Pompeya"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién dirigió 'El Señor de los Anillos'?",
+    "answer": "Peter Jackson"
+  },
+  {
+    "category": "Arte",
+    "question": "¿A qué estilo pertenece la obra de Claude Monet?",
+    "answer": "Impresionismo"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Cuál es el mamífero más grande del mundo?",
+    "answer": "Ballena azul"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa 'RAM'?",
+    "answer": "Random Access Memory"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'Drácula'?",
+    "answer": "Bram Stoker"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién compuso 'El Mesías' (Aleluya)?",
+    "answer": "Georg Friedrich Händel"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Cómo se llama el número superior en una fracción?",
+    "answer": "Numerador"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué país se encuentra Machu Picchu?",
+    "answer": "Perú"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el primer hombre en orbitar la Tierra?",
+    "answer": "Yuri Gagarin"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué estudia la citología?",
+    "answer": "Células"
+  },
+  {
+    "category": "Cultura",
+    "question": "¿Cuál es la moneda oficial de Rusia?",
+    "answer": "Rublo"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué elemento tiene el símbolo 'Cu'?",
+    "answer": "Cobre"
+  },
+  {
+    "category": "Física",
+    "question": "¿Qué es el cero absoluto (0 Kelvin) en grados Celsius?",
+    "answer": "-273.15 °C"
+  },
+  {
+    "category": "Geografía de Nayarit",
+    "question": "¿Cuál es la capital del estado de Nayarit?",
+    "answer": "Tepic"
+  },
+  {
+    "category": "Personajes de Nayarit",
+    "question": "¿Qué famoso poeta modernista nació en Tepic, Nayarit?",
+    "answer": "Amado Nervo"
+  },
+  {
+    "category": "Cultura de Nayarit",
+    "question": "¿Qué grupo indígena originario de Nayarit es famoso por su arte con chaquira?",
+    "answer": "Wixárikas (Huicholes)"
+  },
+  {
+    "category": "Historia de Nayarit",
+    "question": "¿Qué 'Niño Héroe' nació en Tepic?",
+    "answer": "Juan Escutia"
+  },
+  {
+    "category": "Geografía de Nayarit",
+    "question": "¿Cómo se llama la isla de Nayarit conocida como la 'Venecia Mexicana'?",
+    "answer": "Mexcaltitán"
+  },
+  {
+    "category": "Turismo de Nayarit",
+    "question": "¿Qué pueblo mágico de Nayarit es famoso mundialmente por el surf?",
+    "answer": "Sayulita"
+  },
+  {
+    "category": "Geografía de Nayarit",
+    "question": "¿Qué archipiélago frente a las costas de Nayarit fue una prisión federal y ahora es centro cultural?",
+    "answer": "Islas Marías"
+  },
+  {
+    "category": "Geografía de Nayarit",
+    "question": "¿Qué laguna nayarita se encuentra dentro del cráter de un volcán?",
+    "answer": "Laguna de Santa María del Oro"
+  },
+  {
+    "category": "Historia de Nayarit",
+    "question": "¿Quién fue el líder indígena cora que resistió a los españoles en la Mesa del Nayar?",
+    "answer": "Rey Nayar (Nayarít)"
+  },
+  {
+    "category": "Geografía de Nayarit",
+    "question": "¿Cuál es el volcán activo más importante de Nayarit?",
+    "answer": "Volcán Ceboruco"
+  },
+  {
+    "category": "Turismo de Nayarit",
+    "question": "¿Qué puerto histórico de Nayarit fue clave para la exploración española hacia el norte (California)?",
+    "answer": "San Blas"
+  },
+  {
+    "category": "Naturaleza de Nayarit",
+    "question": "¿Qué parque nacional en Nayarit es conocido como 'La Galápagos Mexicana' por sus aves de patas azules?",
+    "answer": "Parque Nacional Isla Isabel"
+  },
+  {
+    "category": "Geografía de Nayarit",
+    "question": "¿Qué río importante cruza gran parte del estado y desemboca cerca de San Blas?",
+    "answer": "Río Grande de Santiago"
   }
 ]

@@ -37,6 +37,7 @@ export const GameProvider = ({ children }) => {
   const [roundNumber, setRoundNumber] = useState(() => loadState('roundNumber', 1));
   const [currentLevelIndex, setCurrentLevelIndex] = useState(() => loadState('currentLevelIndex', 0));
   const [bankedMoney, setBankedMoney] = useState(() => loadState('bankedMoney', 0));
+  const [totalGameMoney, setTotalGameMoney] = useState(() => loadState('totalGameMoney', 0));
   const [timer, setTimer] = useState(() => loadState('timer', 120));
   const [isTimerRunning, setIsTimerRunning] = useState(false); // Don't persist running state
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(() => loadState('currentQuestionIndex', 0));
@@ -65,7 +66,8 @@ export const GameProvider = ({ children }) => {
     currentQuestionIndex,
     roundNumber,
     isQuestionVisible,
-    selectedPackId
+    selectedPackId,
+    totalGameMoney
   };
 
   // Determine Role (Simple location check)
@@ -86,6 +88,7 @@ export const GameProvider = ({ children }) => {
       setRoundNumber(receivedState.roundNumber);
       setIsQuestionVisible(receivedState.isQuestionVisible);
       setSelectedPackId(receivedState.selectedPackId);
+      setTotalGameMoney(receivedState.totalGameMoney);
     }
   };
 
@@ -131,10 +134,11 @@ export const GameProvider = ({ children }) => {
       localStorage.setItem('rival_weakest_currentQuestionIndex', JSON.stringify(currentQuestionIndex));
       localStorage.setItem('rival_weakest_isQuestionVisible', JSON.stringify(isQuestionVisible));
       localStorage.setItem('rival_weakest_selectedPackId', JSON.stringify(selectedPackId));
+      localStorage.setItem('rival_weakest_totalGameMoney', JSON.stringify(totalGameMoney));
     }
   }, [
     gameStatus, players, currentPlayerIndex, currentLevelIndex,
-    bankedMoney, timer, isTimerRunning, currentQuestionIndex, roundNumber, isQuestionVisible, selectedPackId
+    bankedMoney, timer, isTimerRunning, currentQuestionIndex, roundNumber, isQuestionVisible, selectedPackId, totalGameMoney
   ]);
 
   // --- Effects ---
@@ -195,33 +199,56 @@ export const GameProvider = ({ children }) => {
   const getActivePlayers = () => players.filter(p => p.status === 'active');
 
   const resetRound = () => {
+    // 1. Determine Start Player Index (Before resetting stats)
+    let nextPlayerIndex = 0;
+
+    // Check if we are advancing to a new round (GameStatus is SUMMARY) or starting fresh
+    if (gameStatus === 'SUMMARY') {
+      // Round 2+: Best Survivor starts. 
+      // Filter ONLY Active Players first
+      const activeSurvivors = players.filter(p => p.status === 'active');
+
+      // Sort by Best Performance: Correct Answers (Desc) > Banked Money (Desc)
+      activeSurvivors.sort((a, b) => {
+        if (b.stats.correct !== a.stats.correct) return b.stats.correct - a.stats.correct;
+        return b.stats.banked - a.stats.banked;
+      });
+
+      // The first player in the sorted list is the Strongest Survivor
+      const bestSurvivor = activeSurvivors[0];
+
+      if (bestSurvivor) {
+        nextPlayerIndex = players.findIndex(p => p.id === bestSurvivor.id);
+      }
+      // If bestSurvivor is undefined (everyone eliminated?), default to 0 prevents crash.
+    } else {
+      // Round 1 (or Game Start): Always start with Player Index 0
+      nextPlayerIndex = 0;
+    }
+
+    // 2. Perform Round Resets
     setCurrentLevelIndex(0);
-    setBankedMoney(0);
-    setTimer(120 - ((roundNumber - 1) * 10)); // Optional: Decrease time per round? keeping simple 120 for now unless requested.
-    // Let's just keep 120 or maybe user wants it manual. 
-    // Logic: "start new round" -> increment round number? 
-    // Usually startGame is called once. resetRound is called for next round.
-    // If gameStatus is PLAYING, we might want to increment.
-    // Let's increment ONLY if we are coming from Summary.
+    // Preserving logic: 120 - ((roundNumber - 1) * 10)
+    setTimer(120 - ((roundNumber - 1) * 10));
+
     if (gameStatus === 'SUMMARY') {
       setRoundNumber(prev => prev + 1);
     }
 
     setIsTimerRunning(false);
 
-    // Reset individual round stats
+    // 3. Reset Stats for all players
     setPlayers(prev => prev.map(p => ({
       ...p,
       stats: { correct: 0, incorrect: 0, banked: 0, streak: 0 }
     })));
 
-    // Set start player (first active)
-    const active = players.filter(p => p.status === 'active');
-    // We need to map active player index back to global players index or just track Active Player Logic separately
-    // Let's ensure currentPlayerIndex points to an active player.
-    // Simplest is to find first active player index in the main array.
-    const firstActiveIndex = players.findIndex(p => p.status === 'active');
-    setCurrentPlayerIndex(firstActiveIndex !== -1 ? firstActiveIndex : 0);
+    // 4. Update Game Totals
+    setTotalGameMoney(prev => prev + bankedMoney);
+    setBankedMoney(0);
+
+    // 5. Apply the calculated Start Player
+    setCurrentPlayerIndex(nextPlayerIndex);
     setIsQuestionVisible(false); // Hide question at start of round
   };
 
@@ -343,6 +370,7 @@ export const GameProvider = ({ children }) => {
     currentLevel: logicChain[currentLevelIndex]?.level || 0,
     currentPotentialMoney,
     bankedMoney, setBankedMoney, // Exposed for God Mode
+    totalGameMoney, setTotalGameMoney, // GRAND TOTAL Exposed for God Mode
     roundNumber, setRoundNumber, // Exposed for God Mode
 
     timer, setTimer, // Exposed for God Mode
@@ -359,6 +387,7 @@ export const GameProvider = ({ children }) => {
     handleBank,
     endRound,
     endGame,
+    nextQuestion, // Exposed for skipping without side effects
   };
 
   return (

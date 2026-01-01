@@ -1,27 +1,297 @@
 [
   {
-    "category": "Música",
-    "question": "¿Rey del Pop?",
-    "answer": "Michael Jackson"
+    "category": "Geografía",
+    "question": "¿Cuál es el único mar del mundo que no tiene costas?",
+    "answer": "Mar de los Sargazos"
   },
   {
-    "category": "Animales",
-    "question": "¿El animal más rápido?",
-    "answer": "Guepardo"
+    "category": "Historia",
+    "question": "¿Cuánto duró exactamente la Guerra de los Cien Años?",
+    "answer": "116 años"
   },
   {
-    "category": "Tecnología",
-    "question": "¿Creador de Microsoft?",
-    "answer": "Bill Gates"
+    "category": "Arte",
+    "question": "¿Arquitecto que diseñó el Museo Guggenheim de Bilbao?",
+    "answer": "Frank Gehry"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cuál es el hueso del cuerpo humano que no está conectado a ningún otro?",
+    "answer": "Hioides"
   },
   {
     "category": "Literatura",
-    "question": "¿Autor de Harry Potter?",
-    "answer": "J.K. Rowling"
+    "question": "¿Cuál es el verdadero nombre del escritor Mark Twain?",
+    "answer": "Samuel Langhorne Clemens"
   },
   {
-    "category": "Comida",
-    "question": "¿Patria del Sushi?",
-    "answer": "Japón"
+    "category": "México",
+    "question": "¿En qué año se inauguró el Palacio de Bellas Artes?",
+    "answer": "1934"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Mongolia?",
+    "answer": "Uln Bator (Ulaanbaatar)"
+  },
+  {
+    "category": "Química",
+    "question": "¿Qué elemento químico tiene el número atómico 74 y es usado en bombillas?",
+    "answer": "Tungsteno (o Wolframio)"
+  },
+  {
+    "category": "Música",
+    "question": "¿Cuántas cuerdas tiene un arpa de concierto estándar?",
+    "answer": "47"
+  },
+  {
+    "category": "Filosofía",
+    "question": "¿Filósofo autor de la obra 'El Leviatán'?",
+    "answer": "Thomas Hobbes"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el segundo hombre en pisar la Luna?",
+    "answer": "Buzz Aldrin"
+  },
+  {
+    "category": "Biología",
+    "question": "¿Cuántos corazones tiene un pulpo?",
+    "answer": "3"
+  },
+  {
+    "category": "México",
+    "question": "¿Nombre del tratado que vendió La Mesilla a Estados Unidos?",
+    "answer": "Tratado de La Mesilla (o Gadsden)"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿País con mayor cantidad de zonas horarias (incluyendo ultramar)?",
+    "answer": "Francia"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿En qué idioma original se escribió 'El Diario de Ana Frank'?",
+    "answer": "Neerlandés (Holandés)"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué película ganó el primer premio Oscar a Mejor Película Animada?",
+    "answer": "Shrek"
+  },
+  {
+    "category": "Religión",
+    "question": "¿Cómo se llama el libro sagrado del Zoroastrismo?",
+    "answer": "Avesta"
+  },
+  {
+    "category": "Matemáticas",
+    "question": "¿Cómo se llama el resultado de una división?",
+    "answer": "Cociente"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Zar de Rusia ejecutado junto a su familia en 1918?",
+    "answer": "Nicolás II"
+  },
+  {
+    "category": "Astronomía",
+    "question": "¿Estrella más cercana a la Tierra después del Sol?",
+    "answer": "Próxima Centauri"
+  },
+  {
+    "category": "México",
+    "question": "¿Pintor mexicano famoso por sus paisajes y perspectiva curvilínea?",
+    "answer": "Dr. Atl (Gerardo Murillo)"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿En qué parte del cuerpo se encuentra el escafoides?",
+    "answer": "En la muñeca (o en el pie)"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Nueva Zelanda?",
+    "answer": "Wellington"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significan las siglas 'HTTP'?",
+    "answer": "HyperText Transfer Protocol"
+  },
+  {
+    "category": "Mitología",
+    "question": "¿Quién es el dios egipcio de la muerte y el embalsamamiento?",
+    "answer": "Anubis"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué año ganó México su primera medalla de oro olímpica (Humberto Mariles)?",
+    "answer": "1948"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Autor de la novela distópica '1984'?",
+    "answer": "George Orwell"
+  },
+  {
+    "category": "Química",
+    "question": "¿Cuál es el único metal que es líquido a temperatura ambiente además del mercurio (teóricamente)?",
+    "answer": "Galio (o Francio/Cesio en días calurosos)"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Batalla que marcó la derrota definitiva de Napoleón?",
+    "answer": "Waterloo"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Estrecho que separa a la isla de Tasmania de Australia?",
+    "answer": "Estrecho de Bass"
+  },
+  {
+    "category": "Cultura",
+    "question": "¿Cómo se llama el miedo irracional a los espacios cerrados?",
+    "answer": "Claustrofobia"
+  },
+  {
+    "category": "México",
+    "question": "¿Nombre de la primera mujer médica en México?",
+    "answer": "Matilde Montoya"
+  },
+  {
+    "category": "Arte",
+    "question": "¿En qué museo se encuentra 'La Joven de la Perla'?",
+    "answer": "Mauritshuis (La Haya)"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Unidad del Sistema Internacional para medir la intensidad luminosa?",
+    "answer": "Candela"
+  },
+  {
+    "category": "Política",
+    "question": "¿Quién fue el primer Secretario General de la ONU?",
+    "answer": "Trygve Lie"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Director de la película 'La Naranja Mecánica'?",
+    "answer": "Stanley Kubrick"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Río que cruza las ciudades de Viena, Budapest y Belgrado?",
+    "answer": "Danubio"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué año cayó el Imperio Romano de Occidente?",
+    "answer": "476 d.C."
+  },
+  {
+    "category": "Biología",
+    "question": "¿Cuál es el animal más ruidoso del océano?",
+    "answer": "Cachalote (o Camarón pistola)"
+  },
+  {
+    "category": "México",
+    "question": "¿Cuál es el estado más pequeño de la República Mexicana?",
+    "answer": "Tlaxcala"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Poeta chileno que ganó el Nobel en 1971?",
+    "answer": "Pablo Neruda"
+  },
+  {
+    "category": "Música",
+    "question": "¿Nombre de la ópera inconclusa de Puccini?",
+    "answer": "Turandot"
+  },
+  {
+    "category": "Física",
+    "question": "¿Partícula elemental responsable de dar masa a las otras partículas?",
+    "answer": "Bosón de Higgs"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿País africano anteriormente conocido como Abisinia?",
+    "answer": "Etiopía"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Tratado que dividió el Nuevo Mundo entre España y Portugal en 1494?",
+    "answer": "Tordesillas"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Actriz con más premios Oscar ganados en la historia?",
+    "answer": "Katharine Hepburn"
+  },
+  {
+    "category": "Química",
+    "question": "¿Gas noble utilizado en los flashes de cámaras fotográficas?",
+    "answer": "Xenón"
+  },
+  {
+    "category": "México",
+    "question": "¿Sitio arqueológico donde se encuentra la Pirámide de los Nichos?",
+    "answer": "El Tajín"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Nombre de la primera vértebra cervical que sostiene el cráneo?",
+    "answer": "Atlas"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Monte más alto del Sistema Solar (ubicado en Marte)?",
+    "answer": "Monte Olimpo"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Único país que ha jugado en todos los mundiales de fútbol?",
+    "answer": "Brasil"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Civilización que construyó Machu Picchu?",
+    "answer": "Inca"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Pintor surrealista belga famoso por sus hombres con bombín?",
+    "answer": "René Magritte"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué mide la Escala Scoville?",
+    "answer": "El picante (capsaicina)"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'El Conde de Montecristo'?",
+    "answer": "Alejandro Dumas"
+  },
+  {
+    "category": "México",
+    "question": "¿Presidente de México que duró en el cargo solo 45 minutos?",
+    "answer": "Pedro Lascuráin"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Capital de Islandia?",
+    "answer": "Reikiavik"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Lenguaje de programación creado por Guido van Rossum?",
+    "answer": "Python"
+  },
+  {
+    "category": "General",
+    "question": "¿Cuál es la letra más usada en el idioma español?",
+    "answer": "La letra E"
   }
 ]
