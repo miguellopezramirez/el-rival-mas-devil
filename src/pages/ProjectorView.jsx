@@ -32,7 +32,7 @@ const ProjectorView = () => {
       <div className="min-h-screen bg-[#000510] flex items-center justify-center text-white p-8">
         <div className="w-full max-w-4xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-12 text-blue-500 uppercase tracking-widest drop-shadow-[0_0_15px_rgba(0,85,255,0.5)]">
-            El Rival Más Débil
+            El Familiar Más Débil (12°Improfamily)
           </h1>
           <h2 className="text-2xl text-gray-400 mb-8 animate-pulse">Esperando Jugadores...</h2>
           <div className="grid grid-cols-2 gap-4">

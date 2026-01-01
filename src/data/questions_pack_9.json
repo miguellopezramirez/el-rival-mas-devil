@@ -1,27 +1,392 @@
 [
   {
-    "category": "Mitología",
-    "question": "¿Dios del trueno nórdico?",
-    "answer": "Thor"
-  },
-  {
     "category": "Geografía",
-    "question": "¿Océano más grande?",
-    "answer": "Pacífico"
-  },
-  {
-    "category": "Matemáticas",
-    "question": "¿Figura de tres lados?",
-    "answer": "Triángulo"
+    "question": "¿Cuál es la capital de Portugal?",
+    "answer": "Lisboa"
   },
   {
     "category": "Cine",
-    "question": "¿Pez payaso buscando a su hijo?",
-    "answer": "Nemo"
+    "question": "¿Qué actor protagoniza la saga 'Misión Imposible'?",
+    "answer": "Tom Cruise"
   },
   {
-    "category": "Biología",
-    "question": "¿Qué respiran los peces?",
-    "answer": "Oxígeno (por branquias)"
+    "category": "Ciencia",
+    "question": "¿Cuál es el planeta más grande del sistema solar?",
+    "answer": "Júpiter"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Cuántos minutos dura un partido de rugby?",
+    "answer": "80 minutos"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién es conocida como la 'Reina del Pop'?",
+    "answer": "Madonna"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Cuántos huesos tiene el cuerpo humano adulto?",
+    "answer": "206"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué continente se encuentra el desierto del Sahara?",
+    "answer": "África"
+  },
+  {
+    "category": "Química",
+    "question": "¿Cuál es la fórmula química del agua?",
+    "answer": "H2O"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Quién pintó 'La última cena'?",
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué civilización construyó Machu Picchu?",
+    "answer": "Inca"
+  },
+  {
+    "category": "Entretenimiento",
+    "question": "¿Cuál es la identidad secreta de Batman?",
+    "answer": "Bruce Wayne"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué gas absorben las plantas durante la fotosíntesis?",
+    "answer": "Dióxido de carbono (CO2)"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el río más largo del mundo?",
+    "answer": "Amazonas"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué deporte se destaca Michael Phelps?",
+    "answer": "Natación"
+  },
+  {
+    "category": "Cultura General",
+    "question": "¿Cuál es la moneda oficial del Reino Unido?",
+    "answer": "Libra esterlina"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Quién fundó Microsoft?",
+    "answer": "Bill Gates"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "answer": "George Washington"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué película ganó el Oscar a Mejor Película en 1997 (sobre un naufragio)?",
+    "answer": "Titanic"
+  },
+  {
+    "category": "Música",
+    "question": "¿De qué país es originaria la banda U2?",
+    "answer": "Irlanda"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Cuál es el ingrediente principal del guacamole?",
+    "answer": "Aguacate"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la montaña más alta del mundo?",
+    "answer": "Monte Everest"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿A qué temperatura hierve el agua (a nivel del mar)?",
+    "answer": "100 grados Celsius"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió la saga de 'Harry Potter'?",
+    "answer": "J.K. Rowling"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué país nació Adolf Hitler?",
+    "answer": "Austria"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Qué selección ganó el Mundial de Fútbol de 2010?",
+    "answer": "España"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿Cómo se llama el muñeco de madera que quería ser un niño de verdad?",
+    "answer": "Pinocho"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Cuál es el órgano más grande del cuerpo humano?",
+    "answer": "La piel"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el país más grande del mundo por superficie?",
+    "answer": "Rusia"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién es conocido como el 'Rey del Rock'?",
+    "answer": "Elvis Presley"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué personaje dice 'Yo soy tu padre' en Star Wars?",
+    "answer": "Darth Vader"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Qué animal es conocido como el rey de la selva?",
+    "answer": "León"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué revolución comenzó en 1789?",
+    "answer": "Revolución Francesa"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa 'www' en una dirección web?",
+    "answer": "World Wide Web"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué deporte se utiliza una raqueta y un volante (pluma)?",
+    "answer": "Bádminton"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cuál es el símbolo químico del oxígeno?",
+    "answer": "O"
+  },
+  {
+    "category": "Música",
+    "question": "¿Cuántas cuerdas tiene una guitarra estándar?",
+    "answer": "6"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué país se encuentra la Torre Eiffel?",
+    "answer": "Francia"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién descubrió América (para Europa) en 1492?",
+    "answer": "Cristóbal Colón"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién es el autor de 'Cien años de soledad'?",
+    "answer": "Gabriel García Márquez"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el océano más grande del mundo?",
+    "answer": "Pacífico"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cuántos planetas hay en el sistema solar?",
+    "answer": "8"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién fue el vocalista de Queen?",
+    "answer": "Freddie Mercury"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Dónde se encuentra el fémur?",
+    "answer": "En el muslo (pierna)"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue 'El Libertador' de gran parte de Sudamérica?",
+    "answer": "Simón Bolívar"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué instrumento se usa para ver las estrellas?",
+    "answer": "Telescopio"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué pintor español es famoso por el cubismo?",
+    "answer": "Pablo Picasso"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Cuántos jugadores hay en un equipo de baloncesto en la cancha?",
+    "answer": "5"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué compañía fabrica el iPhone?",
+    "answer": "Apple"
+  },
+  {
+    "category": "Mitología",
+    "question": "¿Quién es el dios griego del trueno?",
+    "answer": "Zeus"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Qué novela comienza con 'Llamadme Ismael'?",
+    "answer": "Moby Dick"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué guerra terminó en 1945?",
+    "answer": "Segunda Guerra Mundial"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cuál es el metal líquido a temperatura ambiente?",
+    "answer": "Mercurio"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué país están las pirámides de Giza?",
+    "answer": "Egipto"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué banda británica cantaba 'Let it Be'?",
+    "answer": "The Beatles"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Dónde se celebraron los Juegos Olímpicos de 2016?",
+    "answer": "Río de Janeiro"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Qué animal es el símbolo de la WWF?",
+    "answer": "Oso panda"
+  },
+  {
+    "category": "Cultura",
+    "question": "¿Qué día se celebra Navidad?",
+    "answer": "25 de diciembre"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué reina de Egipto fue amante de Julio César y Marco Antonio?",
+    "answer": "Cleopatra"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué órgano bombea sangre en el cuerpo?",
+    "answer": "Corazón"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el país con más habitantes del mundo (históricamente)?",
+    "answer": "China (o India actualmente)"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'El Principito'?",
+    "answer": "Antoine de Saint-Exupéry"
+  },
+  {
+    "category": "Arte",
+    "question": "¿En qué museo está la Mona Lisa?",
+    "answer": "Museo del Louvre"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué deporte se usa un 'puck'?",
+    "answer": "Hockey sobre hielo"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué red social tiene un logo de un pájaro azul (antes de X)?",
+    "answer": "Twitter"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue Nelson Mandela?",
+    "answer": "Presidente de Sudáfrica y activista anti-apartheid"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué es la H en la tabla periódica?",
+    "answer": "Hidrógeno"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién canta 'Thriller'?",
+    "answer": "Michael Jackson"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué película trata sobre un parque de dinosaurios clonados?",
+    "answer": "Jurassic Park"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué bebida se obtiene de la fermentación de la uva?",
+    "answer": "Vino"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el estado más grande de EE. UU.?",
+    "answer": "Alaska"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cuántas patas tiene una araña?",
+    "answer": "8"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué imperio construyó el Coliseo Romano?",
+    "answer": "Imperio Romano"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Qué deporte practica Tiger Woods?",
+    "answer": "Golf"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Quién se cortó una oreja?",
+    "answer": "Vincent van Gogh"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué instrumento toca Ringo Starr?",
+    "answer": "Batería"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué país se encuentra la ciudad de Sídney?",
+    "answer": "Australia"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿De qué color son los Pitufos?",
+    "answer": "Azules"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué vitamina nos da el sol?",
+    "answer": "Vitamina D"
   }
 ]

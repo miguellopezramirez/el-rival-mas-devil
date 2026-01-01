@@ -1,472 +1,342 @@
 [
   {
-    "category": "Geografía (Fácil)",
+    "category": "Cine",
+    "question": "¿Qué actriz interpretó a 'Hermione Granger' en Harry Potter?",
+    "answer": "Emma Watson"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué año terminó la Segunda Guerra Mundial?",
+    "answer": "1945"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué parte del átomo tiene carga positiva?",
+    "answer": "Protón"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué deporte se utiliza un 'puck' o disco?",
+    "answer": "Hockey sobre hielo"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué banda de rock lideraba Freddie Mercury?",
+    "answer": "Queen"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el río más largo de América del Sur?",
+    "answer": "Amazonas"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'La Ilíada'?",
+    "answer": "Homero"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Qué animal es el símbolo nacional de Australia?",
+    "answer": "Canguro"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué empresa fundó Steve Jobs?",
+    "answer": "Apple"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué mujer sonríe en el cuadro más famoso del Louvre?",
+    "answer": "La Mona Lisa (La Gioconda)"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿Cómo se llama el villano principal de Star Wars?",
+    "answer": "Darth Vader"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué país regaló la Estatua de la Libertad a Estados Unidos?",
+    "answer": "Francia"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué ingrediente principal se usa para hacer guacamole?",
+    "answer": "Aguacate"
+  },
+  {
+    "category": "Geografía",
     "question": "¿Cuál es la capital de Italia?",
     "answer": "Roma"
   },
   {
-    "category": "Geografía (Difícil)",
-    "question": "¿Cuál es la capital administrativa de Sri Lanka (de nombre muy largo)?",
-    "answer": "Sri Jayawardenepura Kotte"
-  },
-  {
-    "category": "Cine (Fácil)",
-    "question": "¿De qué color es la pastilla que toma Neo en Matrix para despertar?",
-    "answer": "Roja"
-  },
-  {
-    "category": "Cine (Difícil)",
-    "question": "¿Qué película ganó el primer premio Oscar a la Mejor Película en 1929?",
-    "answer": "Alas (Wings)"
-  },
-  {
-    "category": "Animales (Fácil)",
-    "question": "¿Qué animal es conocido como el 'Rey de la Selva'?",
-    "answer": "León"
-  },
-  {
-    "category": "Animales (Difícil)",
-    "question": "¿Cuál es el animal vertebrado más longevo del mundo (puede vivir más de 400 años)?",
-    "answer": "Tiburón de Groenlandia"
-  },
-  {
-    "category": "Deportes (Fácil)",
-    "question": "¿En qué deporte se utiliza una raqueta y un volante (pluma)?",
-    "answer": "Bádminton"
-  },
-  {
-    "category": "Deportes (Difícil)",
-    "question": "¿Qué país ha ganado más medallas de oro en la historia de los Juegos Olímpicos de Invierno?",
-    "answer": "Noruega"
-  },
-  {
-    "category": "Ciencia (Fácil)",
-    "question": "¿Cuál es el planeta más cercano al Sol?",
-    "answer": "Mercurio"
-  },
-  {
-    "category": "Ciencia (Difícil)",
-    "question": "¿Cómo se llama la unidad de medida de la actividad radiactiva?",
-    "answer": "Becquerel (o Curie)"
-  },
-  {
-    "category": "Historia (Fácil)",
-    "question": "¿Qué navegante descubrió América en 1492?",
-    "answer": "Cristóbal Colón"
-  },
-  {
-    "category": "Historia (Difícil)",
-    "question": "¿Qué tratado dividió el Imperio Carolingio en el año 843?",
-    "answer": "Tratado de Verdún"
-  },
-  {
-    "category": "Cuerpo Humano (Fácil)",
-    "question": "¿Cuántos dientes tiene un adulto promedio (incluyendo las muelas del juicio)?",
-    "answer": "32"
-  },
-  {
-    "category": "Cuerpo Humano (Difícil)",
-    "question": "¿En qué parte del cuerpo se encuentran los 'Islotes de Langerhans'?",
-    "answer": "Páncreas"
-  },
-  {
-    "category": "Literatura (Fácil)",
-    "question": "¿Cómo se llama el mago protagonista de la saga escrita por J.K. Rowling?",
-    "answer": "Harry Potter"
-  },
-  {
-    "category": "Literatura (Difícil)",
-    "question": "¿Qué escritor estadounidense es el autor de 'El ruido y la furia'?",
-    "answer": "William Faulkner"
-  },
-  {
-    "category": "Música (Fácil)",
-    "question": "¿Cuántos integrantes tenían The Beatles?",
-    "answer": "4"
-  },
-  {
-    "category": "Música (Difícil)",
-    "question": "¿Qué compositor escribió las 'Variaciones Goldberg'?",
-    "answer": "Johann Sebastian Bach"
-  },
-  {
-    "category": "Tecnología (Fácil)",
-    "question": "¿Qué compañía fabrica el sistema operativo Windows?",
-    "answer": "Microsoft"
-  },
-  {
-    "category": "Tecnología (Difícil)",
-    "question": "¿En qué año se envió el primer correo electrónico (email) de la historia (aprox)?",
-    "answer": "1971 (Ray Tomlinson)"
-  },
-  {
-    "category": "Arte (Fácil)",
-    "question": "¿Qué colores forman el verde si se mezclan?",
-    "answer": "Azul y Amarillo"
-  },
-  {
-    "category": "Arte (Difícil)",
-    "question": "¿Qué arquitecto diseñó la cúpula de la Catedral de Florencia (Santa María del Fiore)?",
-    "answer": "Filippo Brunelleschi"
-  },
-  {
-    "category": "Geografía (Fácil)",
-    "question": "¿En qué continente está Egipto?",
-    "answer": "África"
-  },
-  {
-    "category": "Geografía (Difícil)",
-    "question": "¿Qué río atraviesa la ciudad de Londres?",
-    "answer": "Támesis"
-  },
-  {
-    "category": "Química (Fácil)",
-    "question": "¿Qué es H2O?",
-    "answer": "Agua"
-  },
-  {
-    "category": "Química (Difícil)",
-    "question": "¿Qué elemento químico lleva el nombre del creador de la tabla periódica?",
-    "answer": "Mendelevio"
-  },
-  {
-    "category": "Cultura Pop (Fácil)",
-    "question": "¿Quién es el hermano de Mario en los videojuegos?",
-    "answer": "Luigi"
-  },
-  {
-    "category": "Cultura Pop (Difícil)",
-    "question": "¿Cómo se llama el planeta natal de Spock en Star Trek?",
-    "answer": "Vulcano"
-  },
-  {
-    "category": "Mitología (Fácil)",
-    "question": "¿Quién es el dios griego del mar?",
-    "answer": "Poseidón"
-  },
-  {
-    "category": "Mitología (Difícil)",
-    "question": "¿En la mitología nórdica, cómo se llama el fin del mundo?",
-    "answer": "Ragnarök"
-  },
-  {
-    "category": "Comida (Fácil)",
-    "question": "¿De qué país es originaria la pizza?",
-    "answer": "Italia"
-  },
-  {
-    "category": "Comida (Difícil)",
-    "question": "¿Qué es el 'escamoles' en la gastronomía mexicana?",
-    "answer": "Larvas de hormiga"
-  },
-  {
-    "category": "Historia (Fácil)",
-    "question": "¿Qué muro dividió Alemania durante la Guerra Fría?",
-    "answer": "Muro de Berlín"
-  },
-  {
-    "category": "Historia (Difícil)",
-    "question": "¿Cómo se llamaba la operación militar para el desembarco de Normandía?",
-    "answer": "Operación Overlord"
-  },
-  {
-    "category": "Astronomía (Fácil)",
-    "question": "¿Qué satélite natural gira alrededor de la Tierra?",
-    "answer": "La Luna"
-  },
-  {
-    "category": "Astronomía (Difícil)",
-    "question": "¿Cuál es la estrella más brillante del cielo nocturno?",
-    "answer": "Sirio"
-  },
-  {
-    "category": "Idiomas (Fácil)",
-    "question": "¿Cómo se dice 'Gracias' en francés?",
-    "answer": "Merci"
-  },
-  {
-    "category": "Idiomas (Difícil)",
-    "question": "¿Qué idioma artificial fue creado por L.L. Zamenhof en 1887?",
-    "answer": "Esperanto"
-  },
-  {
-    "category": "Biología (Fácil)",
-    "question": "¿Qué reptil cambia de color para camuflarse?",
-    "answer": "Camaleón"
-  },
-  {
-    "category": "Biología (Difícil)",
-    "question": "¿Qué nombre recibe el estudio científico de las aves?",
-    "answer": "Ornitología"
-  },
-  {
-    "category": "Deportes (Fácil)",
-    "question": "¿Cuántos jugadores hay en un equipo de baloncesto en la cancha?",
+    "category": "Deportes",
+    "question": "¿Cuántos anillos hay en la bandera olímpica?",
     "answer": "5"
   },
   {
-    "category": "Deportes (Difícil)",
-    "question": "¿Qué ciclista ganó 7 Tours de Francia y luego fue descalificado por dopaje?",
-    "answer": "Lance Armstrong"
+    "category": "Música",
+    "question": "¿Quién es conocido como el 'Rey del Pop'?",
+    "answer": "Michael Jackson"
   },
   {
-    "category": "Cine (Fácil)",
-    "question": "¿Qué animal es Simba en 'El Rey León'?",
-    "answer": "Un león"
+    "category": "Cine",
+    "question": "¿Qué película ganó el Oscar a mejor película en 1997 (sobre un barco)?",
+    "answer": "Titanic"
   },
   {
-    "category": "Cine (Difícil)",
-    "question": "¿Qué director es famoso por sus cameos en sus propias películas y el género de suspenso?",
-    "answer": "Alfred Hitchcock"
+    "category": "Historia",
+    "question": "¿Quién descubrió la penicilina?",
+    "answer": "Alexander Fleming"
   },
   {
-    "category": "Geografía (Fácil)",
-    "question": "¿Cuál es la capital de Argentina?",
-    "answer": "Buenos Aires"
+    "category": "Geografía",
+    "question": "¿Cuál es el país más grande del mundo?",
+    "answer": "Rusia"
   },
   {
-    "category": "Geografía (Difícil)",
-    "question": "¿Cuál es el país más pequeño del mundo?",
-    "answer": "Ciudad del Vaticano"
-  },
-  {
-    "category": "Tecnología (Fácil)",
-    "question": "¿Qué red social utiliza un pájaro azul como logo (o lo utilizaba)?",
-    "answer": "Twitter"
-  },
-  {
-    "category": "Tecnología (Difícil)",
-    "question": "¿Qué significa la sigla 'VPN'?",
-    "answer": "Virtual Private Network"
-  },
-  {
-    "category": "Arte (Fácil)",
-    "question": "¿Quién pintó los girasoles?",
-    "answer": "Vincent van Gogh"
-  },
-  {
-    "category": "Arte (Difícil)",
-    "question": "¿A qué movimiento artístico pertenece la obra 'La persistencia de la memoria' (relojes blandos)?",
-    "answer": "Surrealismo"
-  },
-  {
-    "category": "Música (Fácil)",
-    "question": "¿Qué instrumento tiene teclas blancas y negras?",
-    "answer": "Piano"
-  },
-  {
-    "category": "Música (Difícil)",
-    "question": "¿Qué banda de rock progresivo lanzó el álbum 'The Wall'?",
-    "answer": "Pink Floyd"
-  },
-  {
-    "category": "Historia (Fácil)",
-    "question": "¿En qué país se usaban las pirámides como tumbas de faraones?",
-    "answer": "Egipto"
-  },
-  {
-    "category": "Historia (Difícil)",
-    "question": "¿Quién fue el último zar de Rusia?",
-    "answer": "Nicolás II"
-  },
-  {
-    "category": "Literatura (Fácil)",
-    "question": "¿Quién es el compañero de Sherlock Holmes?",
-    "answer": "Dr. Watson"
-  },
-  {
-    "category": "Literatura (Difícil)",
-    "question": "¿Quién escribió 'La insoportable levedad del ser'?",
-    "answer": "Milan Kundera"
-  },
-  {
-    "category": "Ciencia (Fácil)",
-    "question": "¿Qué gas respiramos principalmente para vivir?",
+    "category": "Ciencia",
+    "question": "¿Qué gas respiramos para sobrevivir?",
     "answer": "Oxígeno"
   },
   {
-    "category": "Ciencia (Difícil)",
-    "question": "¿Qué partícula subatómica no tiene carga eléctrica?",
-    "answer": "Neutrón"
+    "category": "Literatura",
+    "question": "¿Quién escribió 'Romeo y Julieta'?",
+    "answer": "William Shakespeare"
   },
   {
-    "category": "Geografía (Fácil)",
-    "question": "¿En qué país está la Torre Eiffel?",
-    "answer": "Francia"
+    "category": "Tecnología",
+    "question": "¿Qué red social tiene un logo de una cámara instantánea?",
+    "answer": "Instagram"
   },
   {
-    "category": "Geografía (Difícil)",
-    "question": "¿Qué país tiene la mayor cantidad de lagos en el mundo?",
-    "answer": "Canadá"
+    "category": "Arte",
+    "question": "¿Quién pintó 'La noche estrellada'?",
+    "answer": "Vincent van Gogh"
   },
   {
-    "category": "Cultura Pop (Fácil)",
-    "question": "¿De qué color es la piel de Hulk?",
-    "answer": "Verde"
-  },
-  {
-    "category": "Cultura Pop (Difícil)",
-    "question": "¿Cuál es el verdadero nombre de Iron Man?",
-    "answer": "Tony Stark"
-  },
-  {
-    "category": "Religión (Fácil)",
-    "question": "¿Dónde nació Jesús según la Biblia?",
-    "answer": "Belén"
-  },
-  {
-    "category": "Religión (Difícil)",
-    "question": "¿Quién fundó el budismo?",
-    "answer": "Siddharta Gautama (Buda)"
-  },
-  {
-    "category": "Anatomía (Fácil)",
-    "question": "¿Dónde tenemos el ombligo?",
-    "answer": "En el abdomen (barriga)"
-  },
-  {
-    "category": "Anatomía (Difícil)",
-    "question": "¿Cómo se llama el hueso de la rodilla?",
-    "answer": "Rótula"
-  },
-  {
-    "category": "Marcas (Fácil)",
-    "question": "¿Qué marca de autos tiene un caballo en su logo?",
-    "answer": "Ferrari (o Porsche/Mustang)"
-  },
-  {
-    "category": "Marcas (Difícil)",
-    "question": "¿De qué país es originaria la marca 'Nokia'?",
-    "answer": "Finlandia"
-  },
-  {
-    "category": "Historia (Fácil)",
-    "question": "¿Quién dio el 'Grito de Dolores' en México?",
-    "answer": "Miguel Hidalgo"
-  },
-  {
-    "category": "Historia (Difícil)",
-    "question": "¿En qué año se disolvió oficialmente la Unión Soviética?",
-    "answer": "1991"
-  },
-  {
-    "category": "Naturaleza (Fácil)",
-    "question": "¿Qué líquido producen las abejas?",
-    "answer": "Miel"
-  },
-  {
-    "category": "Naturaleza (Difícil)",
-    "question": "¿Cuál es el árbol más alto del mundo (especie)?",
-    "answer": "Secuoya roja"
-  },
-  {
-    "category": "Deportes (Fácil)",
-    "question": "¿Qué deporte practica Lionel Messi?",
+    "category": "Deportes",
+    "question": "¿En qué deporte se destaca Lionel Messi?",
     "answer": "Fútbol"
   },
   {
-    "category": "Deportes (Difícil)",
-    "question": "¿En qué año ganó España su primer Mundial de Fútbol masculino?",
-    "answer": "2010"
+    "category": "Música",
+    "question": "¿Qué instrumento tiene 88 teclas?",
+    "answer": "Piano"
   },
   {
-    "category": "Cine (Fácil)",
-    "question": "¿Cómo se llama el ogro verde de las películas de DreamWorks?",
-    "answer": "Shrek"
-  },
-  {
-    "category": "Cine (Difícil)",
-    "question": "¿Qué actor ha ganado más premios Oscar a Mejor Actor Principal (Daniel Day-Lewis)?",
-    "answer": "Daniel Day-Lewis"
-  },
-  {
-    "category": "Geografía (Fácil)",
+    "category": "Geografía",
     "question": "¿Cuál es la capital de Alemania?",
     "answer": "Berlín"
   },
   {
-    "category": "Geografía (Difícil)",
-    "question": "¿Qué estrecho separa Alaska de Rusia?",
-    "answer": "Estrecho de Bering"
+    "category": "Cine",
+    "question": "¿Cómo se llama el ogro verde de DreamWorks?",
+    "answer": "Shrek"
   },
   {
-    "category": "Química (Fácil)",
-    "question": "¿Cuál es el símbolo químico del Oxígeno?",
-    "answer": "O"
+    "category": "Historia",
+    "question": "¿Quién fue el primer presidente de Estados Unidos?",
+    "answer": "George Washington"
   },
   {
-    "category": "Química (Difícil)",
-    "question": "¿Qué es el grafeno (alótropos de qué elemento)?",
-    "answer": "Carbono"
+    "category": "Ciencia",
+    "question": "¿Qué es el H2O?",
+    "answer": "Agua"
   },
   {
-    "category": "Matemáticas (Fácil)",
-    "question": "¿Cuánto es 10 x 10?",
-    "answer": "100"
+    "category": "Gastronomía",
+    "question": "¿De qué país es originaria la pizza?",
+    "answer": "Italia"
   },
   {
-    "category": "Matemáticas (Difícil)",
-    "question": "¿Qué nombre reciben los ángulos mayores de 90 grados pero menores de 180?",
-    "answer": "Obtusos"
+    "category": "Anatomía",
+    "question": "¿Qué órgano bombea sangre al cuerpo?",
+    "answer": "Corazón"
   },
   {
-    "category": "Mitología (Fácil)",
-    "question": "¿Quién es el dios del trueno en la mitología nórdica (y Avenger)?",
-    "answer": "Thor"
+    "category": "Tecnología",
+    "question": "¿Quién es el creador de Facebook?",
+    "answer": "Mark Zuckerberg"
   },
   {
-    "category": "Mitología (Difícil)",
-    "question": "¿Quién mató a Aquiles disparándole una flecha en el talón?",
-    "answer": "Paris"
+    "category": "Arte",
+    "question": "¿Quién esculpió el 'David'?",
+    "answer": "Miguel Ángel"
   },
   {
-    "category": "Música (Fácil)",
-    "question": "¿Quién es la 'Reina del Tex-Mex'?",
+    "category": "Cultura Pop",
+    "question": "¿Cómo se llama el mago protagonista de la saga de J.K. Rowling?",
+    "answer": "Harry Potter"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué continente está Egipto?",
+    "answer": "África"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Qué equipo de la NBA jugaba Michael Jordan?",
+    "answer": "Chicago Bulls"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué fuerza nos mantiene pegados al suelo?",
+    "answer": "Gravedad"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué muro cayó en 1989?",
+    "answer": "Muro de Berlín"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué estudio de animación creó 'Toy Story'?",
+    "answer": "Pixar"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Qué animal es conocido como el 'Rey de la Selva'?",
+    "answer": "León"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa 'www'?",
+    "answer": "World Wide Web"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué colores forman el verde?",
+    "answer": "Azul y Amarillo"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué deporte se usa una raqueta y un volante (pluma)?",
+    "answer": "Bádminton"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el emperador de Francia a principios del siglo XIX?",
+    "answer": "Napoleón Bonaparte"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿A qué temperatura hierve el agua (nivel del mar)?",
+    "answer": "100 grados Celsius"
+  },
+  {
+    "category": "Geografía de Nayarit",
+    "question": "¿Con qué estados limita Nayarit al norte?",
+    "answer": "Sinaloa y Durango"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué cantante es conocida como la 'Reina del Tex-Mex'?",
     "answer": "Selena Quintanilla"
   },
   {
-    "category": "Música (Difícil)",
-    "question": "¿Qué banda de grunge lideraba Kurt Cobain?",
-    "answer": "Nirvana"
+    "category": "Geografía",
+    "question": "¿Cuál es el océano más grande?",
+    "answer": "Pacífico"
   },
   {
-    "category": "Inventos (Fácil)",
-    "question": "¿Qué inventaron los hermanos Wright?",
-    "answer": "El avión"
+    "category": "Cultura Pop",
+    "question": "¿Qué familia amarilla vive en Springfield?",
+    "answer": "Los Simpson"
   },
   {
-    "category": "Inventos (Difícil)",
-    "question": "¿Quién inventó la imprenta de tipos móviles en Occidente?",
-    "answer": "Johannes Gutenberg"
+    "category": "Anatomía",
+    "question": "¿Cuántos dientes tiene un adulto promedio?",
+    "answer": "32"
   },
   {
-    "category": "Idiomas (Fácil)",
-    "question": "¿Qué idioma se habla en México?",
-    "answer": "Español"
+    "category": "Cine",
+    "question": "¿Quién dirigió 'Parque Jurásico'?",
+    "answer": "Steven Spielberg"
   },
   {
-    "category": "Idiomas (Difícil)",
-    "question": "¿Cuál es el idioma más hablado del mundo por número de hablantes nativos?",
-    "answer": "Chino Mandarín"
+    "category": "Historia",
+    "question": "¿Qué civilización construyó las pirámides de Egipto?",
+    "answer": "Egipcia"
   },
   {
-    "category": "Cultura (Fácil)",
-    "question": "¿Qué se celebra el 25 de diciembre?",
-    "answer": "Navidad"
+    "category": "Tecnología",
+    "question": "¿Qué compañía fabrica el sistema operativo Windows?",
+    "answer": "Microsoft"
   },
   {
-    "category": "Cultura (Difícil)",
-    "question": "¿Qué día se celebra el Día de los Muertos en México?",
-    "answer": "1 y 2 de noviembre"
+    "category": "Gastronomía",
+    "question": "¿Qué bebida se obtiene de la uva?",
+    "answer": "Vino"
   },
   {
-    "category": "Astronomía (Fácil)",
-    "question": "¿De qué color es el planeta Marte?",
-    "answer": "Rojo"
+    "category": "Deportes",
+    "question": "¿Qué tenista español ha ganado más Roland Garros?",
+    "answer": "Rafael Nadal"
   },
   {
-    "category": "Astronomía (Difícil)",
-    "question": "¿Cómo se llama nuestra galaxia vecina más cercana (espiral)?",
-    "answer": "Andrómeda"
+    "category": "Ciencia",
+    "question": "¿Qué satélite gira alrededor de la Tierra?",
+    "answer": "Luna"
+  },
+  {
+    "category": "Arte",
+    "question": "¿En qué ciudad está la Torre Eiffel?",
+    "answer": "París"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién toca la batería en The Beatles?",
+    "answer": "Ringo Starr"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Canadá?",
+    "answer": "Ottawa"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Cómo se llama el detective creado por Arthur Conan Doyle?",
+    "answer": "Sherlock Holmes"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué año llegó el hombre a la Luna?",
+    "answer": "1969"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué actor interpretó a Jack Sparrow?",
+    "answer": "Johnny Depp"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué estudia la botánica?",
+    "answer": "Las plantas"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Cuál es el órgano más grande del cuerpo (superficie)?",
+    "answer": "La piel"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Cuántos jugadores tiene un equipo de voleibol en cancha?",
+    "answer": "6"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué red social usa un pájaro azul como logo (antes de X)?",
+    "answer": "Twitter"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Argentina?",
+    "answer": "Buenos Aires"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué instrumento toca Yo-Yo Ma?",
+    "answer": "Violonchelo"
   }
 ]

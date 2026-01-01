@@ -36,7 +36,7 @@ const RoundSummaryScreen = ({ isProjector = false }) => {
           <div className="bg-green-600 p-4 rounded-full mb-6 shadow-[0_0_20px_rgba(0,255,0,0.6)]">
             <Trophy size={50} className="text-white" />
           </div>
-          <h3 className="text-green-400 uppercase tracking-widest text-lg font-bold mb-2">El Rival Más Fuerte</h3>
+          <h3 className="text-green-400 uppercase tracking-widest text-lg font-bold mb-2">El Familiar Más Fuerte</h3>
           <p className="text-6xl font-bold text-white mb-6 text-center">{strongest?.name || '-'}</p>
           <div className="flex gap-8 text-xl text-gray-300">
             <span>Aciertos: <strong className="text-white">{strongest?.stats.correct ?? 0}</strong></span>
@@ -49,7 +49,7 @@ const RoundSummaryScreen = ({ isProjector = false }) => {
           <div className="bg-red-600 p-4 rounded-full mb-6 shadow-[0_0_20px_rgba(255,0,0,0.6)]">
             <ThumbsDown size={50} className="text-white" />
           </div>
-          <h3 className="text-red-400 uppercase tracking-widest text-lg font-bold mb-2">El Rival Más Débil</h3>
+          <h3 className="text-red-400 uppercase tracking-widest text-lg font-bold mb-2">El Familiar Más Débil</h3>
           <p className="text-6xl font-bold text-white mb-6 text-center">{weakest?.name || '-'}</p>
           <div className="flex gap-8 text-xl text-gray-300">
             <span>Errores: <strong className="text-white">{weakest?.stats.incorrect ?? 0}</strong></span>

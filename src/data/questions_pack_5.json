@@ -145,11 +145,6 @@
     "answer": "Torá"
   },
   {
-    "category": "Tecnología",
-    "question": "¿Qué empresa creó el sistema operativo Android?",
-    "answer": "Android Inc. (adquirida luego por Google)"
-  },
-  {
     "category": "Historia",
     "question": "¿Qué tratado puso fin a la Guerra de Sucesión Española?",
     "answer": "Tratado de Utrecht"
@@ -378,11 +373,6 @@
     "category": "Tecnología",
     "question": "¿Qué significa 'RAM'?",
     "answer": "Random Access Memory"
-  },
-  {
-    "category": "Literatura",
-    "question": "¿Quién escribió 'Drácula'?",
-    "answer": "Bram Stoker"
   },
   {
     "category": "Música",

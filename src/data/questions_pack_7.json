@@ -25,11 +25,6 @@
     "answer": "Donkey Kong"
   },
   {
-    "category": "Capitales (Nivel Experto)",
-    "question": "¿Capital de Mongolia?",
-    "answer": "Ulán Bator"
-  },
-  {
     "category": "Negocios",
     "question": "¿Con qué nombre se fundó originalmente la empresa Nike?",
     "answer": "Blue Ribbon Sports"
@@ -78,11 +73,6 @@
     "category": "Moda",
     "question": "¿Qué diseñador es famoso por sus suelas de zapatos rojas?",
     "answer": "Christian Louboutin"
-  },
-  {
-    "category": "Capitales (Nivel Experto)",
-    "question": "¿Cuál es la capital de Nueva Zelanda?",
-    "answer": "Wellington"
   },
   {
     "category": "Videojuegos",
@@ -183,11 +173,6 @@
     "category": "Gastronomía",
     "question": "¿Qué es el 'caviar'?",
     "answer": "Huevas de esturión curadas con sal"
-  },
-  {
-    "category": "Capitales (Nivel Experto)",
-    "question": "¿Capital de Islandia?",
-    "answer": "Reikiavik"
   },
   {
     "category": "Inventos",

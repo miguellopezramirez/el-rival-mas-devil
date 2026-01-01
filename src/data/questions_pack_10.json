@@ -1,27 +1,487 @@
 [
   {
-    "category": "General",
-    "question": "¿Color de la esperanza?",
-    "answer": "Verde"
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de España?",
+    "answer": "Madrid"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué actor interpreta a 'Iron Man' en el universo Marvel?",
+    "answer": "Robert Downey Jr."
   },
   {
     "category": "Historia",
-    "question": "¿Reina de Egipto famosa?",
-    "answer": "Cleopatra"
+    "question": "¿En qué año cayó las Torres Gemelas de Nueva York?",
+    "answer": "2001"
   },
   {
     "category": "Deportes",
-    "question": "¿Evento cada 4 años?",
-    "answer": "Juegos Olímpicos"
+    "question": "¿Cuánto dura un asalto (round) en el boxeo profesional masculino?",
+    "answer": "3 minutos"
   },
   {
-    "category": "Ciencia",
-    "question": "¿Planeta con anillos?",
-    "answer": "Saturno"
+    "category": "Música",
+    "question": "¿Qué banda británica lanzó la canción 'Bohemian Rhapsody'?",
+    "answer": "Queen"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿En qué ciudad viven Romeo y Julieta?",
+    "answer": "Verona"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Cuál es el animal terrestre más rápido?",
+    "answer": "Guepardo (Cheetah)"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué ciudad se encuentra el famoso reloj 'Big Ben'?",
+    "answer": "Londres"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Quién es el creador de la red social Facebook?",
+    "answer": "Mark Zuckerberg"
   },
   {
     "category": "Arte",
-    "question": "¿Escultor del David?",
+    "question": "¿Qué artista pintó la Capilla Sixtina?",
     "answer": "Miguel Ángel"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿Cuál es la debilidad de Superman?",
+    "answer": "Kriptonita"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué barco chocó contra un iceberg y se hundió en 1912?",
+    "answer": "Titanic"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cómo se llama el proceso por el cual el agua se convierte en hielo?",
+    "answer": "Solidificación (o Congelación)"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Cuál es el ingrediente principal del sushi?",
+    "answer": "Arroz avinagrado"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el país más poblado del mundo (actualmente)?",
+    "answer": "India"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Qué evento deportivo se celebra cada 4 años?",
+    "answer": "Juegos Olímpicos (o Mundial de Fútbol)"
+  },
+  {
+    "category": "Música",
+    "question": "¿Cómo se llama la cantante colombiana famosa por 'Hips Don't Lie'?",
+    "answer": "Shakira"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Cómo se llama el vaquero de 'Toy Story'?",
+    "answer": "Woody"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Qué parte del cuerpo humano se encarga de filtrar la sangre?",
+    "answer": "Los riñones"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Qué canal conecta el mar Mediterráneo con el mar Rojo?",
+    "answer": "Canal de Suez"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el dictador de Alemania durante la Segunda Guerra Mundial?",
+    "answer": "Adolf Hitler"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué instrumento mide la temperatura?",
+    "answer": "Termómetro"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió las aventuras de 'Tom Sawyer'?",
+    "answer": "Mark Twain"
+  },
+  {
+    "category": "Cultura General",
+    "question": "¿Cuántos días tiene un año bisiesto?",
+    "answer": "366"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué deporte se utiliza un bate y una pelota pequeña?",
+    "answer": "Béisbol"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa 'PC' en informática?",
+    "answer": "Personal Computer (Computadora Personal)"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué instrumento toca Paul McCartney?",
+    "answer": "Bajo"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Qué pez es famoso por tener mala memoria (en la cultura popular, como Dory)?",
+    "answer": "Pez cirujano (o Pez dorado)"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Grecia?",
+    "answer": "Atenas"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué película de Disney tiene como protagonista a una sirena?",
+    "answer": "La Sirenita"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué civilización construyó las pirámides del Sol y la Luna en México?",
+    "answer": "Teotihuacana"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Cuál es el gas más abundante en la atmósfera de la Tierra?",
+    "answer": "Nitrógeno"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué estatua famosa se encuentra en la entrada de Nueva York?",
+    "answer": "La Estatua de la Libertad"
+  },
+  {
+    "category": "Entretenimiento",
+    "question": "¿Cómo se llama la novia de Mickey Mouse?",
+    "answer": "Minnie Mouse"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué país se encuentra la Gran Muralla?",
+    "answer": "China"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Cuál es el deporte más popular en Estados Unidos (Super Bowl)?",
+    "answer": "Fútbol Americano"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién es el autor de la 'Quinta Sinfonía' (Ta-ta-ta-taaan)?",
+    "answer": "Ludwig van Beethoven"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Qué personaje de cuento pierde un zapato de cristal?",
+    "answer": "Cenicienta"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué parte de la planta realiza la fotosíntesis?",
+    "answer": "Las hojas"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue el primer hombre en pisar la Luna?",
+    "answer": "Neil Armstrong"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Cómo se llama el mago gris de 'El Señor de los Anillos'?",
+    "answer": "Gandalf"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Rusia?",
+    "answer": "Moscú"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Cuántas vidas se dice que tienen los gatos?",
+    "answer": "7 (o 9 en algunos países)"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué empresa creó el sistema operativo Android?",
+    "answer": "Google"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Qué tenemos en la boca que usamos para masticar?",
+    "answer": "Dientes"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿Qué superhéroe es conocido como 'El hombre araña'?",
+    "answer": "Spider-Man"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el río más largo de Europa?",
+    "answer": "Volga"
+  },
+  {
+    "category": "Historia",
+    "question": "¿En qué país ocurrió la Revolución Industrial?",
+    "answer": "Reino Unido (Inglaterra)"
+  },
+  {
+    "category": "Música",
+    "question": "¿De qué país son originarios los Beatles?",
+    "answer": "Reino Unido (Inglaterra)"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Qué color es la tarjeta que expulsa a un jugador en el fútbol?",
+    "answer": "Roja"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué planeta es conocido por sus anillos espectaculares?",
+    "answer": "Saturno"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'La Odisea'?",
+    "answer": "Homero"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué actor interpretó al Joker en 'Escuadrón Suicida' (2016)?",
+    "answer": "Jared Leto"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué ingrediente es la base del chocolate?",
+    "answer": "Cacao"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de Japón?",
+    "answer": "Tokio"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Qué órgano utilizamos para respirar?",
+    "answer": "Pulmones"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Cómo se llamaba el barco de Charles Darwin?",
+    "answer": "Beagle"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué dispositivo se usa para mover el cursor en la computadora?",
+    "answer": "Mouse (Ratón)"
+  },
+  {
+    "category": "Cultura General",
+    "question": "¿Cuál es el idioma más hablado en Sudamérica?",
+    "answer": "Español (o Portugués, dependiendo de la estadística)"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué cantante estadounidense es famosa por 'Bad Romance'?",
+    "answer": "Lady Gaga"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué satélite natural tiene la Tierra?",
+    "answer": "Luna"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Cuántos jugadores tiene un equipo de voleibol en la cancha?",
+    "answer": "6"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué película animada presenta a un pez payaso buscando a su hijo?",
+    "answer": "Buscando a Nemo"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la montaña más alta de América?",
+    "answer": "Aconcagua"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue la esposa del rey Luis XVI de Francia?",
+    "answer": "María Antonieta"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Qué animal es el mejor amigo del hombre?",
+    "answer": "Perro"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Qué novela cuenta la historia de una ballena blanca?",
+    "answer": "Moby Dick"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué pintor español es famoso por sus bigotes y el surrealismo?",
+    "answer": "Salvador Dalí"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué fenómeno natural es un arco de colores en el cielo?",
+    "answer": "Arcoíris"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Qué país ganó el mundial de fútbol 2022?",
+    "answer": "Argentina"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el océano que baña las costas de Brasil?",
+    "answer": "Atlántico"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién es el director de 'Avatar'?",
+    "answer": "James Cameron"
+  },
+  {
+    "category": "Música",
+    "question": "¿Qué género musical es Bob Marley?",
+    "answer": "Reggae"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué muro dividía Berlín?",
+    "answer": "Muro de Berlín"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué significa 'Wi-Fi' (popularmente)?",
+    "answer": "Conexión inalámbrica"
+  },
+  {
+    "category": "Anatomía",
+    "question": "¿Dónde está el bíceps?",
+    "answer": "En el brazo"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿Cómo se llama la escuela de magia de Harry Potter?",
+    "answer": "Hogwarts"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es la capital de los Estados Unidos?",
+    "answer": "Washington D.C."
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué animal produce la leche?",
+    "answer": "Mamíferos (Vaca, cabra, etc.)"
+  },
+  {
+    "category": "Gastronomía",
+    "question": "¿Qué plato italiano consiste en láminas de pasta, carne y salsa?",
+    "answer": "Lasaña"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿En qué deporte se utiliza la expresión 'Jaque Mate'?",
+    "answer": "Ajedrez"
+  },
+  {
+    "category": "Literatura",
+    "question": "¿Quién escribió 'Drácula'?",
+    "answer": "Bram Stoker"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Qué imperio dominó el Mediterráneo en la antigüedad?",
+    "answer": "Imperio Romano"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Qué actor interpretó a Forrest Gump?",
+    "answer": "Tom Hanks"
+  },
+  {
+    "category": "Música",
+    "question": "¿Cómo se llama el rey del Rock and Roll?",
+    "answer": "Elvis Presley"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿En qué país se encuentra la ciudad de Dubái?",
+    "answer": "Emiratos Árabes Unidos"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué estudia la astronomía?",
+    "answer": "Los astros (estrellas, planetas)"
+  },
+  {
+    "category": "Animales",
+    "question": "¿Cuál es el ave que no vuela y vive en la Antártida?",
+    "answer": "Pingüino"
+  },
+  {
+    "category": "Tecnología",
+    "question": "¿Qué aparato se usa para llamar por teléfono en la calle (móvil)?",
+    "answer": "Celular (Smartphone)"
+  },
+  {
+    "category": "Arte",
+    "question": "¿Qué mujer no tiene brazos en una famosa estatua griega (Venus de...)?",
+    "answer": "Milo"
+  },
+  {
+    "category": "Historia",
+    "question": "¿Quién fue la primera mujer en ganar un Premio Nobel?",
+    "answer": "Marie Curie"
+  },
+  {
+    "category": "Deportes",
+    "question": "¿Qué deporte practica LeBron James?",
+    "answer": "Baloncesto"
+  },
+  {
+    "category": "Cultura Pop",
+    "question": "¿De qué color es la piel de los Simpson?",
+    "answer": "Amarilla"
+  },
+  {
+    "category": "Geografía",
+    "question": "¿Cuál es el lago más grande de África?",
+    "answer": "Lago Victoria"
+  },
+  {
+    "category": "Ciencia",
+    "question": "¿Qué fuerza hace que la brújula apunte al norte?",
+    "answer": "Magnetismo"
+  },
+  {
+    "category": "Cine",
+    "question": "¿Quién dirigió 'Pulp Fiction'?",
+    "answer": "Quentin Tarantino"
+  },
+  {
+    "category": "Música",
+    "question": "¿Quién canta 'Someone Like You'?",
+    "answer": "Adele"
   }
 ]
